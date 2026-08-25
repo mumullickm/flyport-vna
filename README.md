@@ -5,6 +5,7 @@ Finance and operations compliance briefing, prepared by **Flyport Limited**, Gen
 - `index.html` . landing page
 - `deck.html` . the 17 slide **Operations Launch Plan**, the current pack
 - `Vietnam-Airlines-Bangladesh-Operations-Launch-Plan.pptx` . the same 17 slides as a native PowerPoint
+- `LAUNCH-PLAN.md` . the launch plan as a written document
 - `briefing-deck.html` . the earlier 22 slide finance and operations compliance briefing
 - `Vietnam-Airlines-Bangladesh-Launch.pptx` . that briefing as a native PowerPoint
 - `BRIEFING.md` . the briefing as a written document
