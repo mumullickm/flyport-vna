@@ -2,11 +2,17 @@
 
 Finance and operations compliance briefing, prepared by **Flyport Limited**, General Sales Agent, Bangladesh.
 
+**Current pack**
+
 - `index.html` . landing page
-- `deck.html` . the 17 slide **Operations Launch Plan**, the current pack
+- `deck.html` . the 17 slide **Operations Launch Plan**, on the Flyport site theme
 - `Vietnam-Airlines-Bangladesh-Operations-Launch-Plan.pptx` . the same 17 slides as a native PowerPoint
 - `LAUNCH-PLAN.md` . the launch plan as a written document
-- `briefing-deck.html` . the earlier 22 slide finance and operations compliance briefing
+- `Vietnam-Airlines-Bangladesh-Launch-Pack.zip` . all of the above plus the typefaces, in one download
+
+**Earlier pack, kept so distributed links still resolve**
+
+- `briefing-deck.html` . the 22 slide finance and operations compliance briefing
 - `Vietnam-Airlines-Bangladesh-Launch.pptx` . that briefing as a native PowerPoint
 - `BRIEFING.md` . the briefing as a written document
 - `fonts/` . Outfit, Plus Jakarta Sans and IBM Plex Mono (OFL). Install these before opening the PPTX so the type renders as designed
