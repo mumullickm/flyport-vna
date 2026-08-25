@@ -16,8 +16,6 @@ Consolidating BIDA, CAAB, NBR, the Bangladesh Bank circulars and our AD-bank rem
 | **Part 3** . Monthly Remittance Operations | Process flow, surplus-earnings calculator, Post Facto Approval |
 | **Part 4** . Documentation & Roadmap | Annual and monthly filings, what is still to scope, launch timeline |
 
-Parts 1 and 2 are one-time. Parts 3 and 4 repeat every month for as long as the route operates.
-
 ---
 
 ## Context
@@ -34,8 +32,6 @@ Parts 1 and 2 are one-time. Parts 3 and 4 repeat every month for as long as the 
 | DAC ⇄ HAN | Dhaka – Hanoi | 3× weekly (planned) |
 | DAC ⇄ SGN | Dhaka – Ho Chi Minh City | 4× weekly (planned) |
 
-Frequencies are planned, not filed.
-
 ---
 
 # Part 1 . Launch Requirements
@@ -50,8 +46,6 @@ Frequencies are planned, not filed.
 | **NBR Double Taxation Certificate** | DTA certificate referencing the Bangladesh–Vietnam tax treaty |
 | **Tax Exemption Certificate** | Valid NBR certificate, renewed annually, supporting treaty-rate withholding |
 
-The two treaty documents are the ones that lapse. Everything above them is issued once; these two are annual renewals and a lapse stops withholding relief immediately.
-
 ## 02 . Branch registration and expatriate staffing
 
 | Item | What it is |
@@ -61,10 +55,8 @@ The two treaty documents are the ones that lapse. Everything above them is issue
 | **Expert Work Permit** | Work authorization for each expatriate employee |
 | **Waiver Clause 7 & 8** | Conditions in the BIDA permission letter that must be satisfied for outward remittance to proceed |
 
-- **1 : 5** — BIDA staff ratio. One expatriate supported by at least five Bangladeshi or local employees.
-- **USD 50,000** — Minimum encashment certificate of inward remittance as initial establishment cost. Applies to branch, liaison and representative offices, joint ventures, and 100% foreign-owned companies.
-
-Clauses 7 and 8 are the bridge into Part 2. They are a BIDA condition, but Bangladesh Bank and the AD bank rely on them.
+- **1 : 5**. BIDA staff ratio. One expatriate supported by at least five Bangladeshi or local employees.
+- **USD 50,000**. Minimum encashment certificate of inward remittance as initial establishment cost. Applies to branch, liaison and representative offices, joint ventures, and 100% foreign-owned companies.
 
 ## 03 . Traffic rights and ground operating approvals
 
@@ -78,8 +70,6 @@ Clauses 7 and 8 are the bridge into Part 2. They are a BIDA condition, but Bangl
 | **No Objection Certificate** | NOC favouring the GSA, issued by CAAB |
 
 Also required on an annual basis: agreements with CAAB and Biman Bangladesh for fuel uplift, catering and ground handling, plus city office, airport office and cargo-village lease agreements.
-
-Fares and cargo tariffs are the commercial gate. Nothing can be sold until both are approved.
 
 ---
 
@@ -95,8 +85,6 @@ Every remittance mechanic in this pack traces back to one of these four.
 | 15 Nov 2021 | SPA Circular No. 1 | Fuel / Oil Purchase in FX | ADs may issue foreign-exchange drafts favouring state-owned fuel and oil companies for local purchases |
 | 21 Nov 2021 | SPA Circular No. 02 | Separate Accounts per Carrier | GSAs representing multiple airlines must keep a dedicated bank account for each one |
 | 9 Aug 2023 | SPA Circular No. 3 | OEMS / OIMS Freight Certificates | Digital Form FF-Export Prepaid and FF-Import Collect replace manual freight certificates |
-
-These four are the complete legal spine for airline remittance in Bangladesh as it stands.
 
 ## 05 . Core remittance principle, and one account per carrier
 
@@ -128,7 +116,7 @@ An Authorized Dealer bank maintains a dedicated account and transaction records 
 
 ## 07 . Two special-purpose foreign-exchange mechanisms
 
-### Fuel / oil purchase in foreign exchange — 2021 Circular No. 1
+### Fuel / oil purchase in foreign exchange, 2021 Circular No. 1
 
 - Airlines already pay local expenses from local earnings under GFET.
 - To ease fuel and oil purchase, the AD bank may issue **FX drafts favouring state-owned fuel and oil selling companies**.
@@ -136,15 +124,13 @@ An Authorized Dealer bank maintains a dedicated account and transaction records 
 - Payments are reported via the online TM Form monitoring system, with schedules to Bangladesh Bank's Statistics Department.
 - ADs receiving the FX drafts may retain amounts in margin or approved FC accounts, with Bangladesh Bank permission, used only for import-payment settlement.
 
-### OEMS / OIMS freight certificates — 2023 Circular No. 3
+### OEMS / OIMS freight certificates, 2023 Circular No. 3
 
 - ADs now generate **two digital forms** instead of manual certificates.
-- **Form FF-Export Prepaid** — freight charge on a prepaid basis against export, generated via OEMS.
-- **Form FF-Import Collect** — freight charge against FOB or similar import, generated via OIMS.
+- **Form FF-Export Prepaid**, freight charge on a prepaid basis against export, generated via OEMS.
+- **Form FF-Import Collect**, freight charge against FOB or similar import, generated via OIMS.
 - The exporter or importer provides the relevant form to the freight forwarder, airline or shipping company.
 - The form is then submitted to the designated AD bank when remitting surplus earnings or freight charges to head office or principal abroad.
-
-The 2023 change is purely mechanical but it breaks old checklists. Anyone still expecting a manual freight certificate will hold up the file.
 
 ---
 
@@ -165,8 +151,6 @@ Our own AD-bank procedure, start to finish, for a single month's cycle.
 
 > **Note the order.** Bangladesh Bank approval is Post Facto. It is obtained *after* the remittance is executed, not before.
 
-Steps 02 and 03 are the loop. A single unsupported collection line sends the whole month back, and the month behind it starts stacking.
-
 ## 09 . Monthly surplus-earnings calculator
 
 | Line | Amount, BDT |
@@ -179,14 +163,10 @@ Steps 02 and 03 are the loop. A single unsupported collection line sends the who
 | Less: Disbursement for the Month | XXX |
 | Less: Other Adjustment | XXX |
 | **B. Total Disbursement for the Month** | **XXXXXX** |
-| i. Provision for refund — 10% of passenger revenue (current month) | XXX |
+| i. Provision for refund, 10% of passenger revenue (current month) | XXX |
 | ii. Unused provision for refund, earlier period (previous month) | XXX |
 | **C. Net Provision (i − ii)** | **XXXXXX** |
 | **Net Surplus Earnings to be Remitted for the Month (A − B − C)** | **XXXXXX** |
-
-Subtotals A, B and C follow the 2020 circular exactly. The provision in line i is the regulatory minimum of ten percent of passenger revenue; a deeper buffer is permitted. Agree the provision base with the AD bank once and hold it constant.
-
-The interactive deck carries this as a live model — move any input and the net remittable figure recomputes.
 
 ## 10 . Post Facto Approval, and the airline file types
 
@@ -198,8 +178,8 @@ The interactive deck carries this as a live model — move any input and the net
 
 ### Airline file types
 
-**Core files** — Passenger collection file, Cargo collection file, Disbursement file
-**Supplementary files** — Miscellaneous file, Refund statement file
+**Core files**: Passenger collection file, Cargo collection file, Disbursement file
+**Supplementary files**: Miscellaneous file, Refund statement file
 
 ---
 
@@ -216,8 +196,6 @@ The interactive deck carries this as a live model — move any input and the net
 7. Valid Work Permit for each expatriate
 8. Updated VAT registration, Trade Licence and Tax Certificate
 
-Eight standing renewals. Track them as dates, not as tasks. Any one of them lapsing stops the monthly remittance file at the AD bank.
-
 ## 12 . Documentation required, monthly basis
 
 | Group | Items |
@@ -226,8 +204,6 @@ Eight standing renewals. Track them as dates, not as tasks. Any one of them laps
 | **Financial records** | Collection and disbursement summary . Bank statement . AIT and refund statement |
 | **Sales reports** | BSP report . CASS report . Airline billing summary |
 | **Tax & fee payments** | Challans for relevant VAT and tax . Payment summary for embarkation, airport and passenger development fee |
-
-Twelve items, four groups, every month. Flyport assembles all four groups so Hanoi only ever sees one submitted file.
 
 ## 13 . The launch roadmap
 
@@ -244,8 +220,6 @@ GSA appointment filed with CAAB . Fare, cargo tariff and schedule approval . Exp
 Remittance process flow and PFA filing . Annual and monthly documentation
 
 **Still to be scoped:** Financial Statements and GSA Manpower.
-
-Nothing in phase two starts before phase one closes. Phase two is where launches quietly lose a month if the sequence was wrong.
 
 ---
 
