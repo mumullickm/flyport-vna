@@ -1,4 +1,4 @@
-<title>Vietnam Airlines Bangladesh Launch</title>
+<title>Flyport for Vietnam Airlines . Bangladesh Launch</title>
 <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -209,10 +209,6 @@ table.dt tr.tot td{border-top:1px solid var(--line-2);border-bottom:0;font-weigh
 
 /* ---------- flow ---------- */
 .flow{display:grid;gap:.55rem;grid-template-columns:repeat(5,1fr);align-items:stretch}
-.flow.six{grid-template-columns:repeat(6,1fr)}
-@media(max-width:1240px){.flow.six{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:1050px){.flow.six{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.flow.six{grid-template-columns:1fr}}
 @media(max-width:1050px){.flow{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.flow{grid-template-columns:1fr}}
 .step{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:12px;
@@ -282,12 +278,12 @@ input[type=range].m::-moz-range-thumb{background:var(--mag)}
    the canvas above it does not */
 .hero-img{position:absolute;inset:0;z-index:0;background-position:center center;
   background-size:cover;background-repeat:no-repeat;will-change:transform}
-/* the aircraft crosses the sky once every 34s. HTML only: export mode and
+/* the aircraft crosses the sky once every 46s. HTML only: export mode and
    print park it at a fixed point so the exported slide is still composed. */
 .flyer{position:absolute;z-index:1;top:69%;left:-13%;
   width:clamp(122px,13.8vw,252px);height:auto;pointer-events:none;
   filter:drop-shadow(0 18px 36px rgba(120,86,20,.18));
-  animation:fly 34s linear infinite;will-change:transform}
+  animation:fly 17s linear infinite;will-change:transform}
 /* A at the lower left to B at the upper right. The stops are sampled at equal
    arc length along a gently bowed curve, and the timing is linear, so the
    aircraft holds one speed the whole way and the loop has no seam. */
@@ -392,15 +388,15 @@ svg.routes .dist{font-family:var(--fm);font-size:9.5px;fill:var(--muted-2);lette
     linear-gradient(152deg,#CDEFF6 0%,#A6DFEC 22%,#7FCEDF 48%,#5CBED3 74%,#3EACC6 100%)}
 
 /* and the slide before it leans toward the same water on the way out */
-#s16::after{content:"";position:absolute;left:0;right:0;bottom:0;height:34%;z-index:0;pointer-events:none;
+#s20::after{content:"";position:absolute;left:0;right:0;bottom:0;height:34%;z-index:0;pointer-events:none;
   background:linear-gradient(180deg,rgba(124,206,221,0) 0%,rgba(124,206,221,.14) 55%,rgba(124,206,221,.30) 100%)}
-#s16 > .wrap{position:relative;z-index:1}
+#s20 > .wrap{position:relative;z-index:1}
 /* the words sit clear of the fade */
 .closer .wrap{padding-top:clamp(1.6rem,6vh,4.2rem)}
 .closer-plane{position:absolute;z-index:1;top:46%;left:-16%;
   width:clamp(130px,15vw,272px);height:auto;pointer-events:none;
   filter:drop-shadow(0 20px 38px rgba(10,95,101,.24));
-  animation:flyClose 42s linear infinite;will-change:transform}
+  animation:flyClose 21s linear infinite;will-change:transform}
 /* a shallow 5.4 degree cruise, sampled at equal arc length and timed linear,
    so it holds one speed and never reads as a climb out */
 @keyframes flyClose{
@@ -460,17 +456,17 @@ body[data-notes="on"] .notes{display:block}
 .slide.dense .foot{margin-top:1rem;padding-top:.6rem}
 .slide.dense ul.tick li{font-size:.85rem}
 .slide.dense .tl .ev{padding:.5rem 0}
-#s12 .out{padding:clamp(.72rem,1.15vw,1rem)}
-#s12 .big-n{font-size:clamp(1.5rem,2.9vw,2.35rem);margin:.25rem 0 .08rem}
-#s12 .calc .small{font-size:.79rem;line-height:1.45}
-
+#s11 .out{padding:clamp(.72rem,1.15vw,1rem)}
+#s11 .big-n{font-size:clamp(1.5rem,2.9vw,2.35rem);margin:.25rem 0 .08rem}
+#s11 .calc .small{font-size:.79rem;line-height:1.45}
+#s5 .tl .ev{padding:.44rem 0}
 @media (max-height:880px){
-  #s12 .out{padding:.7rem .8rem}
-  #s12 .out table.dt td{padding:.28rem .45rem}
-  #s12 .big-n{font-size:clamp(1.4rem,2.6vw,2.05rem);margin:.2rem 0 .06rem}
-  #s12 .bar{margin:.45rem 0 .25rem}
-  #s12 .calc .small{font-size:.76rem;line-height:1.4;margin-top:.5rem}
-  #s12 .lede{margin-top:.3rem}
+  #s11 .out{padding:.7rem .8rem}
+  #s11 .out table.dt td{padding:.28rem .45rem}
+  #s11 .big-n{font-size:clamp(1.4rem,2.6vw,2.05rem);margin:.2rem 0 .06rem}
+  #s11 .bar{margin:.45rem 0 .25rem}
+  #s11 .calc .small{font-size:.76rem;line-height:1.4;margin-top:.5rem}
+  #s11 .lede{margin-top:.3rem}
 }
 
 /* short viewports: tighten the vertical rhythm so every slide stays on one screen */
@@ -589,22 +585,23 @@ body[data-export="on"] .out{box-shadow:none}
 </div>
 
 <main class="deck" id="deck">
+
 <!-- ============ 01 HERO ============ -->
-<section class="slide" id="s1" data-act="Opening" data-title="Vietnam Airlines Bangladesh Operations Launch">
+<section class="slide" id="s1" data-act="Opening" data-title="Launch, and the money behind it">
   <div class="hero-img" id="heroimg" aria-hidden="true"></div>
   <img class="flyer" id="flyer" alt="" aria-hidden="true">
   <div class="hero-scrim" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="eyebrow rv">Flyport Ltd. &nbsp;/&nbsp; General Sales Agent</div>
-    <h1 class="hero-h rv">Vietnam Airlines Bangladesh Operations Launch</h1>
-    <p class="lede rv" style="margin-top:1.15rem;max-width:54ch">Launch Requirements and Remittance Operations Plan. Consolidating BIDA, CAAB, NBR, the Bangladesh Bank circulars and our AD-bank remittance procedure into one launch playbook.</p>
+    <div class="eyebrow rv">Vietnam Airlines &nbsp;/&nbsp; Bangladesh operation launch &nbsp;/&nbsp; 2026</div>
+    <h1 class="hero-h rv">Launching the route is the easy half. Getting the money out is the regulated half.</h1>
+    <p class="lede rv" style="margin-top:1.15rem;max-width:52ch">Every taka Vietnam Airlines earns in Bangladesh is trapped until six authorities have signed. This briefing maps all of them, in the order they must be cleared, and shows exactly what surplus earnings means in arithmetic.</p>
     <div class="authorities rv">
       <span class="pill gold">BIDA</span>
       <span class="pill gold">CAAB</span>
       <span class="pill gold">NBR</span>
-      <span class="pill teal">BB / AD Bank</span>
-      <span class="pill teal">Remittance</span>
-      <span class="pill mag">Compliance</span>
+      <span class="pill teal">Bangladesh Bank</span>
+      <span class="pill teal">AD Bank</span>
+      <span class="pill mag">Flyport GSA</span>
     </div>
     <div class="lockup rv">
       <img class="lk-fp" id="h_flyport" alt="Flyport Limited">
@@ -615,61 +612,59 @@ body[data-export="on"] .out{box-shadow:none}
     </div>
     <div class="hero-meta rv">
       <div><span>Role</span><strong>General Sales Agent, Bangladesh</strong></div>
-      <div><span>Prepared</span><strong>Internal briefing, August 2026</strong></div>
+      <div><span>Scope</span><strong>Establishment, remittance, the monthly cycle</strong></div>
     </div>
-    <div class="notes"><b>Presenter note</b>One line before the agenda: this pack is not a proposal, it is the operating manual. Everything in it is either a document we must hold or a step we must run every month.</div>
+    <div class="notes"><b>Presenter note</b>Do not open with the company. Open with the constraint. Every airline entering Bangladesh discovers the repatriation problem in month four, after the money has already piled up. The value of a GSA is that this deck exists before month one.</div>
     <p class="credit rv">Sky and aircraft: Vietnam Airlines own brand imagery, used for this briefing</p>
   </div>
 </section>
 
-<!-- ============ 02 AGENDA ============ -->
-<section class="slide" id="s2" data-act="Opening" data-title="From launch requirements to live remittance">
+<!-- ============ 02 THE ARGUMENT ============ -->
+<section class="slide" id="s2" data-act="Opening" data-title="The whole brief in one page">
   <div class="wrap">
-    <div class="eyebrow rv">Agenda</div>
-    <h2 class="big rv">From launch requirements to live remittance.</h2>
-    <p class="lede rv" style="margin-top:.4rem;max-width:76ch">Our own GSA requirement checklist, four Bangladesh Bank circulars, and our AD-bank remittance procedure, combined into four parts.</p>
-    <div class="grid g2 rv" style="margin-top:1.5rem">
+    <div class="eyebrow rv">The whole brief, in three moves</div>
+    <h2 class="big rv">Six clearances, one bank account, one monthly file.</h2>
+    <div class="grid g3 rv" style="margin-top:1.5rem">
       <div class="card q">
-        <span class="unit">Part 1</span>
-        <h4>Launch Requirements</h4>
-        <p>Corporate and legal, BIDA and expatriate compliance, CAAB approvals.</p>
+        <span class="unit">Move 01</span>
+        <h4>Establishment is sequential, not parallel</h4>
+        <p>BIDA permission, CAAB operating permission, NBR tax exemption and the AD bank account each depend on the one before it. Attempting them out of order is the single most common reason a launch slips a quarter.</p>
       </div>
       <div class="card t">
-        <span class="unit">Part 2</span>
-        <h4>Bangladesh Bank &amp; AD Bank</h4>
-        <p>Four circulars, dedicated accounts, waiver clauses, fuel and freight rules.</p>
+        <span class="unit">Move 02</span>
+        <h4>Remittance is formula driven</h4>
+        <p>Bangladesh Bank does not negotiate surplus earnings. It is collections, less disbursements, less a mandatory ten percent refund provision. Everything else is evidence for that one line.</p>
       </div>
       <div class="card m">
-        <span class="unit">Part 3</span>
-        <h4>Monthly Remittance Operations</h4>
-        <p>Process flow, surplus-earnings calculator, Post Facto Approval.</p>
-      </div>
-      <div class="card q">
-        <span class="unit">Part 4</span>
-        <h4>Documentation &amp; Roadmap</h4>
-        <p>Annual and monthly filings, what is still to scope, launch timeline.</p>
+        <span class="unit">Move 03</span>
+        <h4>The GSA carries the monthly cycle</h4>
+        <p>Approval is post facto, so the airline remits first and files afterwards. That inverts the risk. Flyport holds the dedicated account, builds the file, and answers the bank's queries before they reach Vietnam Airlines.</p>
       </div>
     </div>
-    <div class="notes"><b>Presenter note</b>Parts 1 and 2 are one-time. Parts 3 and 4 repeat every month for as long as the route operates. Say that here, it frames the whole pack.</div>
+    <div class="grid g4 rv" style="margin-top:1.5rem">
+      <div class="stat"><div class="v gold">6</div><div class="k">Regulatory gates to revenue</div></div>
+      <div class="stat"><div class="v">10%</div><div class="k">Mandatory refund provision</div></div>
+      <div class="stat"><div class="v teal">6 mo</div><div class="k">Post facto remittance window</div></div>
+      <div class="stat"><div class="v mag">1</div><div class="k">Dedicated account per airline, by law</div></div>
+    </div>
+    <p class="foot rv">Every rule cited in this deck is drawn from the Guidelines for Foreign Exchange Transactions 2018 and the four SPA Circulars reproduced on page 09. Where a figure is illustrative rather than regulatory, it is labelled as such on the page.</p>
+    <div class="notes"><b>Presenter note</b>If the room only keeps one page, keep this one. The three moves are the spine of the next nineteen slides.</div>
   </div>
 </section>
 
-<!-- ============ 03 CONTEXT ============ -->
-<section class="slide wide dense" id="s3" data-act="Opening" data-title="Vietnam Airlines' Bangladesh launch">
+<!-- ============ 03 WHERE IT LANDS ============ -->
+<section class="slide wide dense" id="s2b" data-act="The map" data-title="Where the operation lands">
   <div class="wrap">
-    <div class="eyebrow rv">Context</div>
-    <h2 class="big rv">Vietnam Airlines' Bangladesh launch.</h2>
-    <div class="split rv" style="--cols:1.05fr .95fr;margin-top:1.2rem">
+    <div class="eyebrow rv">Context &nbsp;/&nbsp; The airport and the network</div>
+    <h2 class="big rv">Two routes into a capacity constrained airport that is about to double.</h2>
+    <div class="split rv" style="--cols:1.02fr .98fr;margin-top:1.2rem">
       <div>
-        <ul class="tick" style="margin-top:.2rem">
-          <li>Flyport Ltd. is Vietnam Airlines' <b>General Sales Agent</b> and local representation partner in Bangladesh.</li>
-          <li>A renewed <b>Bangladesh&ndash;Vietnam Air Services Agreement</b> underpins direct scheduled service between the two countries.</li>
-          <li>Initial operation is planned around <b>Dhaka&ndash;Hanoi</b> and <b>Dhaka&ndash;Ho Chi Minh City</b>, subject to visa-service normalization.</li>
-          <li>This pack combines our own launch-requirement checklist, four Bangladesh Bank circulars, and our AD-bank remittance procedure into a single operational playbook.</li>
-        </ul>
+        <figure class="fig">
+          <div class="fig-img" id="t3img" role="img" aria-label="Terminal 3, Hazrat Shahjalal International Airport, Dhaka"></div>
+          <figcaption>Terminal 3, Hazrat Shahjalal International, Dhaka. The apron, jet bridges and cargo capacity that the launch schedule is planned against.</figcaption>
+        </figure>
       </div>
       <div>
-        <span class="unit" style="display:block;margin-bottom:.5rem">Planned route network</span>
         <svg class="routes" viewBox="0 0 620 300" role="img" aria-label="Route diagram: Dhaka to Hanoi and Dhaka to Ho Chi Minh City">
           <defs>
             <linearGradient id="arcA" x1="0" y1="0" x2="1" y2="0">
@@ -682,339 +677,357 @@ body[data-export="on"] .out{box-shadow:none}
             </linearGradient>
           </defs>
           <line class="gl" x1="34" y1="262" x2="600" y2="262"/>
-          <path class="arc" d="M60 240 C 210 100, 360 80, 486 120" stroke="url(#arcA)"/>
-          <path class="arc" d="M60 240 C 230 192, 370 178, 486 198" stroke="url(#arcB)"/>
+          <path class="arc" d="M60 240 C 220 96, 400 76, 556 118" stroke="url(#arcA)"/>
+          <path class="arc" d="M60 240 C 240 190, 410 176, 556 196" stroke="url(#arcB)"/>
           <circle class="node dac" cx="60" cy="240" r="7"/>
-          <circle class="node han" cx="486" cy="120" r="5.5"/>
-          <circle class="node sgn" cx="486" cy="198" r="5.5"/>
+          <circle class="node han" cx="556" cy="118" r="5.5"/>
+          <circle class="node sgn" cx="556" cy="196" r="5.5"/>
           <text class="code" x="60" y="284" text-anchor="middle">DAC</text>
           <text class="city" x="60" y="299" text-anchor="middle">Dhaka</text>
-          <text class="code han" x="504" y="114">HAN</text>
-          <text class="city" x="504" y="130">Hanoi</text>
-          <text class="code sgn" x="504" y="192">SGN</text>
-          <text class="city" x="504" y="208">Ho Chi Minh City</text>
-          <text class="dist" x="280" y="98">Direct scheduled service under the Bangladesh and Vietnam ASA</text>
+          <text class="code han" x="574" y="112">HAN</text>
+          <text class="city" x="574" y="128">Hanoi</text>
+          <text class="code sgn" x="574" y="190">SGN</text>
+          <text class="city" x="574" y="206">Ho Chi Minh City</text>
+          <text class="dist" x="300" y="96">Direct scheduled service under the Bangladesh and Vietnam ASA</text>
         </svg>
-        <div class="grid g2" style="margin-top:.9rem">
-          <div class="card t">
-            <span class="unit">DAC &nbsp;&#8644;&nbsp; HAN</span>
-            <h4>Dhaka &ndash; Hanoi</h4>
-            <p>3&times; weekly, planned.</p>
-          </div>
-          <div class="card m">
-            <span class="unit">DAC &nbsp;&#8644;&nbsp; SGN</span>
-            <h4>Dhaka &ndash; Ho Chi Minh City</h4>
-            <p>4&times; weekly, planned.</p>
+        <div class="grid g3" style="margin-top:1rem">
+          <div class="stat"><div class="v teal">2</div><div class="k">Planned points in Vietnam</div></div>
+          <div class="stat"><div class="v">1</div><div class="k">Dedicated account, both routes</div></div>
+          <div class="stat"><div class="v mag">1</div><div class="k">Monthly file, both routes</div></div>
+        </div>
+        <p class="small" style="margin-top:.8rem">Passenger and cargo revenue from both routes settles into the same dedicated account and is computed in one monthly surplus earnings statement. The network shape does not change the compliance shape.</p>
+      </div>
+    </div>
+    <div class="notes"><b>Presenter note</b>The point of this slide is the last line, not the map. Two routes, one account, one file. It pre-empts the question about whether a second destination complicates the remittance.</div>
+  </div>
+</section>
+
+<!-- ============ 04 EIGHT DOMAINS ============ -->
+<section class="slide wide" id="s3" data-act="The map" data-title="Eight compliance domains">
+  <div class="wrap">
+    <div class="eyebrow rv">The map &nbsp;/&nbsp; What a new foreign carrier is actually inspected on</div>
+    <h2 class="big rv">Eight domains. Each one holds evidence a bank or an inspector can ask for on any given day.</h2>
+    <p class="lede rv" style="margin-top:.5rem">This is the standing requirement set Flyport maintains for a newly appointed carrier. It is not a launch checklist that gets filed away. It is the permanent shape of the file.</p>
+    <div class="grid g4 rv" style="margin-top:1.5rem">
+      <div class="card q"><span class="unit">Domain 01</span><h4>Corporate and legal</h4><p>Trade licence, Tax Identification Certificate, Business Identification Certificate, and the corporate instruments that make the local presence real.</p></div>
+      <div class="card q"><span class="unit">Domain 02</span><h4>BIDA and expatriate</h4><p>Branch office permission, expert e-visa recommendation, work permit, and the one to five expatriate to local staffing ratio.</p></div>
+      <div class="card q"><span class="unit">Domain 03</span><h4>CAAB and aviation</h4><p>Flight operation permission, approved passenger fare and cargo tariff, filed schedule, and the GSA appointment with its No Objection Certificate.</p></div>
+      <div class="card q"><span class="unit">Domain 04</span><h4>NBR and tax</h4><p>Double taxation relief under the Bangladesh and Vietnam agreement, plus a live tax exemption certificate the AD bank can rely on.</p></div>
+      <div class="card t"><span class="unit">Domain 05</span><h4>Bangladesh Bank and FX</h4><p>Waiver of the outward remittance clauses, notification of the GSA appointment, monthly reporting, and monthly post facto approval.</p></div>
+      <div class="card t"><span class="unit">Domain 06</span><h4>AD bank and remittance</h4><p>A dedicated account and a segregated transaction record for the carrier, and the bank acting as the airline's filing agent to Bangladesh Bank.</p></div>
+      <div class="card t"><span class="unit">Domain 07</span><h4>Financial statements and controls</h4><p>Books that reconcile to the bank statement line by line, because the statement is the only document the regulator accepts without a copy of anything else.</p></div>
+      <div class="card m"><span class="unit">Domain 08</span><h4>GSA operations and manpower</h4><p>City office, airport office, cargo village space, ground handling and catering arrangements, and the people who staff them.</p></div>
+    </div>
+    <div class="notes"><b>Presenter note</b>Colour is doing work here. Gold is establishment, teal is the money regulator, magenta is what Flyport carries. Point that out once, then let it run for the rest of the deck.</div>
+  </div>
+</section>
+
+<!-- ============ 04 WHY GSA ============ -->
+<section class="slide" id="s4" data-act="The map" data-title="Why the GSA structure exists">
+  <div class="wrap">
+    <div class="eyebrow mag rv">The map &nbsp;/&nbsp; Structure</div>
+    <h2 class="big rv">A foreign carrier cannot simply open an office and sell its own tickets.</h2>
+    <div class="split rv" style="margin-top:1.4rem">
+      <div>
+        <h3 class="sub" style="margin-bottom:.65rem">What the branch office can and cannot do</h3>
+        <ul class="tick">
+          <li>BIDA branch and liaison office permission covers representing a foreign airline in Bangladesh. That is the legal basis for a local presence at all.</li>
+          <li>Airline general sales agency and freight agency activity sits in a locally reserved category, so the selling entity has to be Bangladeshi owned.</li>
+          <li>This is precisely why Vietnam Airlines is represented through Flyport Limited rather than a wholly foreign owned entity. The structure is not a preference, it is the compliant path.</li>
+          <li>The two entities are not interchangeable. The branch office holds the permission and the expatriate; the GSA holds the account, the sales, and the file.</li>
+        </ul>
+      </div>
+      <div class="card m">
+        <span class="unit">Consequence for the money</span>
+        <h4 style="margin-top:.3rem">Collections land in a Flyport held account, in the airline's name and for the airline's benefit</h4>
+        <p style="margin-top:.5rem">Under SPA Circular No. 02 of 21 November 2021, a resident general sales agent acting for more than one carrier must maintain a separate bank account for each of them, so that collections from each operation are never commingled.</p>
+        <p style="margin-top:.55rem">Vietnam Airlines therefore gets a ring fenced account from day one, and a bank statement that can be handed to Bangladesh Bank without redaction or explanation. That is what makes the monthly file provable.</p>
+      </div>
+    </div>
+    <div class="notes"><b>Presenter note</b>This is the slide that converts the GSA from a commercial choice into a regulatory necessity. Say the sentence about the reserved category slowly.</div>
+  </div>
+</section>
+
+<!-- ============ 05 ROADMAP ============ -->
+<section class="slide wide dense" id="s5" data-act="The map" data-title="The launch roadmap">
+  <div class="wrap">
+    <div class="eyebrow rv">The map &nbsp;/&nbsp; Sequence</div>
+    <h2 class="big rv">Three phases. Nothing in phase two starts before phase one closes.</h2>
+    <div class="split wideL rv" style="margin-top:1.4rem">
+      <div class="grid g3">
+        <div class="card q">
+          <span class="unit">Phase 1 &nbsp;.&nbsp; Standing up</span>
+          <h4>Legal presence and traffic rights</h4>
+          <ul class="tick tight" style="margin-top:.6rem">
+            <li>Designation under the Bangladesh and Vietnam Air Services Agreement</li>
+            <li>BIDA branch office permission through the One Stop Service portal</li>
+            <li>Trade licence, TIN and BIN registration</li>
+            <li>CAAB flight operation permission and schedule approval</li>
+            <li>GSA appointment and the CAAB No Objection Certificate for it</li>
+          </ul>
+        </div>
+        <div class="card t">
+          <span class="unit">Phase 2 &nbsp;.&nbsp; Financial plumbing</span>
+          <h4>The channel the money will use</h4>
+          <ul class="tick tight t" style="margin-top:.6rem">
+            <li>USD 50,000 inward remittance and its encashment certificate</li>
+            <li>Dedicated AD bank account opened in the carrier's name</li>
+            <li>Waiver of the two outward remittance clauses in the BIDA permission</li>
+            <li>Notification to Bangladesh Bank of the GSA appointment</li>
+            <li>NBR tax exemption certificate under the double taxation agreement</li>
+          </ul>
+        </div>
+        <div class="card m">
+          <span class="unit">Phase 3 &nbsp;.&nbsp; Running</span>
+          <h4>The cycle that repeats every month</h4>
+          <ul class="tick tight m" style="margin-top:.6rem">
+            <li>BSP and CASS settlement into the dedicated account</li>
+            <li>Monthly collection, disbursement and provision computation</li>
+            <li>Remittance through the AD bank</li>
+            <li>Post facto approval file lodged with Bangladesh Bank</li>
+            <li>Annual renewals tracked as standing dates</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <span class="unit">Where the calendar actually goes</span>
+        <div class="tl" style="margin-top:.8rem">
+          <div class="ev done"><div class="w">Weeks 0 to 4</div><h4>Designation and application set</h4><p>Designation, corporate documents attested through the Bangladesh Mission or home chamber, OSS submission lodged.</p></div>
+          <div class="ev"><div class="w">Weeks 4 to 12</div><h4>Inter ministerial review</h4><p>Decided at scheduled committee sittings. Branch and liaison registration typically runs six to twelve weeks from filing.</p></div>
+          <div class="ev"><div class="w">Weeks 8 to 14</div><h4>CAAB permissions in parallel</h4><p>Operating permission, tariffs and schedule advance alongside the BIDA file. Neither authority waits on the other.</p></div>
+          <div class="ev"><div class="w">Weeks 12 to 18</div><h4>Banking and tax</h4><p>Account opening, waiver clauses, GSA notification, tax exemption certificate. Where a launch quietly loses a month if the sequence was wrong.</p></div>
+          <div class="ev"><div class="w">Month 1 of service</div><h4>First remittance cycle</h4><p>First settlement, first surplus computation, first post facto approval. From here the cycle is monthly and unchanging.</p></div>
+        </div>
+      </div>
+    </div>
+    <p class="foot rv">Timelines are Flyport planning assumptions from comparable carrier entries, not regulatory commitments. No authority guarantees a date.</p>
+    <div class="notes"><b>Presenter note</b>The honest line here is that phases one and three are predictable and phase two is where launches slip. Say that out loud, it buys credibility for everything after it.</div>
+  </div>
+</section>
+
+<!-- ============ 06 BIDA ============ -->
+<section class="slide" id="s6" data-act="Establishment" data-title="BIDA permission">
+  <div class="wrap">
+    <div class="eyebrow rv">01 &nbsp;.&nbsp; BIDA &nbsp;/&nbsp; Registering local representation</div>
+    <h2 class="big rv">The permission letter, and the two clauses inside it that decide whether money can leave.</h2>
+    <div class="split tight rv" style="margin-top:1.3rem">
+      <div>
+        <h3 class="sub" style="margin-bottom:.6rem">The permission set</h3>
+        <ul class="tick">
+          <li><b>Branch office permission</b> from BIDA, applied for through the One Stop Service portal and decided by an inter ministerial committee.</li>
+          <li><b>Expert e-visa recommendation letter</b>, the document that lets the nominated expatriate enter on the right category.</li>
+          <li><b>Expert work permit</b>, issued after arrival, renewable and inspected.</li>
+          <li><b>Waiver of Clause 7</b> and <b>Clause 8</b>, the two conditions in the standard permission that restrict outward remittance from the office.</li>
+          <li><b>Encashment certificate</b> evidencing inward remittance of a minimum of USD 50,000 as initial establishment cost.</li>
+        </ul>
+        <div class="card r" style="margin-top:1rem">
+          <span class="unit">Read this one carefully</span>
+          <h4 style="margin-top:.3rem">The waiver is not a formality</h4>
+          <p>Clause numbering follows the standard BIDA permission template. Confirm the exact clause numbers and wording against the permission letter as issued, because the AD bank will read the letter, not the template. Without both waivers on file, the bank has no basis to pass an outward remittance no matter how clean the monthly file is.</p>
+        </div>
+      </div>
+      <div>
+        <div class="grid g2">
+          <div class="stat"><div class="v gold">1 : 5</div><div class="k">Expatriate to local ratio</div><div class="n">BIDA staffing compliance. One expatriate employee is expected to be supported by at least five Bangladeshi employees.</div></div>
+          <div class="stat"><div class="v gold">$50k</div><div class="k">Minimum inward remittance</div><div class="n">Initial establishment cost for a branch, liaison or representative office, evidenced by an encashment certificate.</div></div>
+          <div class="stat"><div class="v">6 to 12</div><div class="k">Weeks, filing to permission</div><div class="n">Planning assumption for branch and liaison registration. Committee sittings are the pacing item.</div></div>
+          <div class="stat"><div class="v teal">2</div><div class="k">Waiver clauses required</div><div class="n">Both must be granted before the AD bank will process surplus earnings out of the country.</div></div>
+        </div>
+        <div class="card q" style="margin-top:1rem">
+          <span class="unit">Application pathway</span>
+          <div class="scroll-x" style="margin-top:.55rem">
+          <table class="dt">
+            <tr><td class="c">01</td><td>Application lodged through the BIDA One Stop Service portal</td></tr>
+            <tr><td class="c">02</td><td>Corporate documents attested by the Bangladesh Mission or the home country chamber of commerce</td></tr>
+            <tr><td class="c">03</td><td>Inter ministerial committee review at a scheduled sitting</td></tr>
+            <tr><td class="c">04</td><td>Permission letter issued for the office and the permitted activity</td></tr>
+            <tr class="hi"><td class="c">05</td><td>Trade licence, TIN, BIN and AD bank account follow from the permission</td></tr>
+          </table>
           </div>
         </div>
       </div>
     </div>
-    <div class="notes"><b>Presenter note</b>Frequencies are planned, not filed. Flag the visa-service dependency here rather than letting it surface later.</div>
+    <div class="notes"><b>Presenter note</b>The clause seven and eight point is the one finance people in the room will not have heard framed this way. It is also the item most often discovered late.</div>
   </div>
 </section>
 
-<!-- ============ 04 CORPORATE, LEGAL & NBR ============ -->
-<section class="slide dense" id="s4" data-act="Launch" data-title="Corporate registration and tax recognition">
+<!-- ============ 07 CAAB ============ -->
+<section class="slide" id="s7" data-act="Establishment" data-title="CAAB permissions">
   <div class="wrap">
-    <div class="eyebrow rv">Part 1 &nbsp;.&nbsp; 01 &nbsp;/&nbsp; Corporate, legal &amp; NBR</div>
-    <h2 class="big rv">Corporate registration and tax recognition.</h2>
+    <div class="eyebrow rv">02 &nbsp;.&nbsp; CAAB &nbsp;/&nbsp; Operating permissions</div>
+    <h2 class="big rv">Traffic rights get the aircraft in. Tariff approval is what lets you sell the seat.</h2>
     <div class="grid g3 rv" style="margin-top:1.3rem">
-      <div class="card q">
-        <span class="unit">Registration</span>
-        <h4>Trade Licence</h4>
-        <p>Base municipal licence to operate as a registered entity in Bangladesh.</p>
-      </div>
-      <div class="card q">
-        <span class="unit">Registration</span>
-        <h4>Tax Identification Certificate</h4>
-        <p>TIN registration with NBR for the local entity.</p>
-      </div>
-      <div class="card q">
-        <span class="unit">Registration</span>
-        <h4>Business Identification Certificate</h4>
-        <p>BIN, the VAT and business identification certificate.</p>
-      </div>
+      <div class="card q"><span class="unit">Permission</span><h4>Flight operation permission</h4><p>Granted by the Civil Aviation Authority of Bangladesh on the strength of designation under the Bangladesh and Vietnam Air Services Agreement.</p></div>
+      <div class="card q"><span class="unit">Permission</span><h4>Approved passenger fare and tariff</h4><p>Passenger fares are filed and approved. Selling outside an approved tariff is a compliance exposure, not a commercial choice.</p></div>
+      <div class="card q"><span class="unit">Permission</span><h4>Approved cargo rate and tariff</h4><p>Cargo rates require approval before space can be sold. This is the item most often left until after the first cargo booking has already been taken.</p></div>
+      <div class="card q"><span class="unit">Permission</span><h4>Flight schedule</h4><p>The timetable is approved in writing. Schedule changes need advance notice rather than retrospective filing.</p></div>
+      <div class="card m"><span class="unit">Permission</span><h4>GSA appointment</h4><p>The appointment of Flyport as General Sales Agent is filed, and a No Objection Certificate favouring the GSA is issued by CAAB.</p></div>
+      <div class="card t"><span class="unit">Ongoing</span><h4>Monthly traffic reporting</h4><p>Traffic, cargo and mail statistics are reported on a monthly cycle. This is a permanent obligation, not a launch task.</p></div>
     </div>
-    <div class="grid g2 rv" style="margin-top:1rem">
-      <div class="card t">
-        <span class="unit">Treaty relief</span>
-        <h4>NBR Double Taxation Certificate</h4>
-        <p>DTA certificate referencing the Bangladesh&ndash;Vietnam tax treaty.</p>
-      </div>
-      <div class="card t">
-        <span class="unit">Treaty relief &nbsp;.&nbsp; renewed annually</span>
-        <h4>Tax Exemption Certificate</h4>
-        <p>Valid NBR certificate, renewed annually, supporting treaty-rate withholding.</p>
-      </div>
-    </div>
-    <div class="notes"><b>Presenter note</b>The two treaty documents are the ones that lapse. Everything above them is issued once; these two are annual renewals and a lapse stops withholding relief immediately.</div>
-  </div>
-</section>
-
-<!-- ============ 05 BIDA & EXPATRIATE ============ -->
-<section class="slide dense" id="s5" data-act="Launch" data-title="Branch registration and expatriate staffing">
-  <div class="wrap">
-    <div class="eyebrow rv">Part 1 &nbsp;.&nbsp; 02 &nbsp;/&nbsp; BIDA &amp; expatriate compliance</div>
-    <h2 class="big rv">Branch registration and expatriate staffing.</h2>
-    <div class="grid g2 rv" style="margin-top:1.25rem">
-      <div class="card q">
-        <span class="unit">BIDA</span>
-        <h4>Branch Office Permission</h4>
-        <p>Core BIDA approval to operate a branch office in Bangladesh.</p>
-      </div>
-      <div class="card q">
-        <span class="unit">BIDA</span>
-        <h4>Expert E-Visa Recommendation Letter</h4>
-        <p>BIDA recommendation supporting the expatriate's e-visa application.</p>
-      </div>
-      <div class="card q">
-        <span class="unit">BIDA</span>
-        <h4>Expert Work Permit</h4>
-        <p>Work authorization for each expatriate employee.</p>
-      </div>
-      <div class="card m">
-        <span class="unit">Gate to remittance</span>
-        <h4>Waiver Clause 7 &amp; 8</h4>
-        <p>Conditions in the BIDA permission letter that must be satisfied for outward remittance to proceed.</p>
-      </div>
-    </div>
-    <div class="grid g2 rv" style="margin-top:1rem">
-      <div class="card t">
-        <div class="stat"><div class="v teal">1 : 5</div><div class="k">BIDA staff ratio</div></div>
-        <p style="margin-top:.5rem">One expatriate supported by at least five Bangladeshi or local employees.</p>
-      </div>
-      <div class="card t">
-        <div class="stat"><div class="v teal">USD 50,000</div><div class="k">Minimum inward remittance</div></div>
-        <p style="margin-top:.5rem">Minimum encashment certificate of inward remittance as initial establishment cost. Applies to branch, liaison and representative offices, joint ventures, and 100% foreign-owned companies.</p>
-      </div>
-    </div>
-    <div class="notes"><b>Presenter note</b>Clauses 7 and 8 are the bridge into Part 2. They are a BIDA condition but Bangladesh Bank and the AD bank rely on them, which is why they appear again on slide 9.</div>
-  </div>
-</section>
-
-<!-- ============ 06 CAAB ============ -->
-<section class="slide dense" id="s6" data-act="Launch" data-title="Traffic rights and ground operating approvals">
-  <div class="wrap">
-    <div class="eyebrow rv">Part 1 &nbsp;.&nbsp; 03 &nbsp;/&nbsp; CAAB &amp; aviation approvals</div>
-    <h2 class="big rv">Traffic rights and ground operating approvals.</h2>
-    <div class="grid g3 rv" style="margin-top:1.25rem">
-      <div class="card q">
-        <span class="unit">Operating</span>
-        <h4>Flight Operation Permission</h4>
-        <p>Core CAAB approval to operate scheduled flights.</p>
-      </div>
-      <div class="card q">
-        <span class="unit">Commercial</span>
-        <h4>Approved Passenger Fare / Tariff</h4>
-        <p>Fare filing approved before tickets can be sold.</p>
-      </div>
-      <div class="card q">
-        <span class="unit">Commercial</span>
-        <h4>Approved Cargo Rate / Tariff</h4>
-        <p>Cargo tariff approved before space can be sold.</p>
-      </div>
-      <div class="card q">
-        <span class="unit">Operating</span>
-        <h4>Flight Schedule</h4>
-        <p>Timetable filed and approved. Changes need advance notice.</p>
-      </div>
-      <div class="card m">
-        <span class="unit">Representation</span>
-        <h4>GSA Appointment</h4>
-        <p>Formal appointment of Flyport Ltd. as GSA, filed with CAAB.</p>
-      </div>
-      <div class="card m">
-        <span class="unit">Representation</span>
-        <h4>No Objection Certificate</h4>
-        <p>NOC favouring the GSA, issued by CAAB.</p>
-      </div>
-    </div>
-    <p class="foot rv">Also required on an annual basis: agreements with CAAB and Biman Bangladesh for fuel uplift, catering and ground handling, plus city office, airport office and cargo-village lease agreements.</p>
-    <div class="notes"><b>Presenter note</b>Fares and cargo tariffs are the commercial gate. Nothing can be sold until both are approved, so they belong on the critical path, not in the paperwork pile.</div>
-  </div>
-</section>
-
-<!-- ============ 07 FOUR CIRCULARS ============ -->
-<section class="slide wide dense" id="s7" data-act="Banking" data-title="The regulatory foundation, four SPA circulars">
-  <div class="wrap">
-    <div class="eyebrow teal rv">Part 2 &nbsp;.&nbsp; 04 &nbsp;/&nbsp; Bangladesh Bank &amp; AD bank</div>
-    <h2 class="big rv">The regulatory foundation. Four SPA circulars.</h2>
-    <p class="lede rv" style="margin-top:.4rem;max-width:80ch">Every remittance mechanic in this pack traces back to one of these four Bangladesh Bank circulars.</p>
-    <div class="grid g4 rv" style="margin-top:1.3rem">
-      <div class="card t">
-        <span class="unit">3 Sep 2020 &nbsp;.&nbsp; SPA Circular No. 1</span>
-        <h4>Remittance of Surplus Earnings</h4>
-        <p>Foundational circular: surplus-earnings basis, 10% refund provision, BSP billing summary replaces Form P and P-2.</p>
-      </div>
-      <div class="card t">
-        <span class="unit">15 Nov 2021 &nbsp;.&nbsp; SPA Circular No. 1</span>
-        <h4>Fuel / Oil Purchase in FX</h4>
-        <p>ADs may issue foreign-exchange drafts favouring state-owned fuel and oil companies for local purchases.</p>
-      </div>
-      <div class="card t">
-        <span class="unit">21 Nov 2021 &nbsp;.&nbsp; SPA Circular No. 02</span>
-        <h4>Separate Accounts per Carrier</h4>
-        <p>GSAs representing multiple airlines must keep a dedicated bank account for each one.</p>
-      </div>
-      <div class="card t">
-        <span class="unit">9 Aug 2023 &nbsp;.&nbsp; SPA Circular No. 3</span>
-        <h4>OEMS / OIMS Freight Certificates</h4>
-        <p>Digital Form FF-Export Prepaid and FF-Import Collect replace manual freight certificates.</p>
-      </div>
-    </div>
-    <p class="foot rv">These four are the complete legal spine for airline remittance in Bangladesh as it stands. Everything on the following six slides is an application of one of them.</p>
-    <div class="notes"><b>Presenter note</b>Keep a printed copy of all four in the room. Finance teams ask for the source text, and having it settles the conversation immediately.</div>
-  </div>
-</section>
-
-<!-- ============ 08 CORE PRINCIPLE + DEDICATED ACCOUNTS ============ -->
-<section class="slide wide dense" id="s8" data-act="Banking" data-title="Core remittance principle and dedicated accounts">
-  <div class="wrap">
-    <div class="eyebrow teal rv">Part 2 &nbsp;.&nbsp; 05 &nbsp;/&nbsp; Bangladesh Bank &amp; AD bank</div>
-    <h2 class="big rv">Core remittance principle, and one account per carrier.</h2>
-    <div class="split rv" style="--cols:1.06fr .94fr;margin-top:1.2rem">
-      <div class="card t">
-        <span class="unit">From the 2020 foundational circular</span>
-        <h4 style="margin-top:.3rem">Surplus earnings, and what the AD bank must see</h4>
-        <ul class="tick t" style="margin-top:.7rem">
-          <li>Surplus earnings are calculated on the basis of <b>passage and freight collections</b>.</li>
-          <li>ADs remit on <b>actual realization</b> if collections are bank-statement supported, a <b>minimum 10% provision</b> is held for refunds on unavailed journeys, and disbursements and tax are properly adjusted.</li>
-          <li>Unused provision from the prior period is <b>added back</b> in the following period.</li>
-          <li>Remittance is only allowed from <b>available funds</b>, never borrowed funds, in the designated account.</li>
+    <div class="split rv" style="margin-top:1.3rem">
+      <div class="card">
+        <span class="unit">Also on the annual file</span>
+        <ul class="tick tight" style="margin-top:.5rem">
+          <li>City office and airport office lease agreements</li>
+          <li>Airport cargo village lease agreement</li>
+          <li>Agreements with CAAB and Biman Bangladesh for fuel uplift, catering and ground handling</li>
+          <li>A separate competency certificate if dangerous goods are to be carried</li>
         </ul>
       </div>
-      <div class="card m">
-        <span class="unit">2021 Circular No. 02 &nbsp;.&nbsp; dedicated accounts</span>
-        <h4 style="margin-top:.3rem">No restriction on representing more than one airline</h4>
-        <p style="margin-top:.5rem">A resident entity may act as GSA for more than one carrier. But to bring discipline to remittances:</p>
-        <p style="margin-top:.6rem"><b class="hlm">A separate, dedicated bank account is required for each airline or shipping line represented.</b> Collections for Vietnam Airlines must stay in their own account, distinct from any other principal Flyport represents.</p>
-        <p style="margin-top:.6rem">ADs were required to guide multi-carrier GSAs to separate accounts within three months of issuance.</p>
+      <div class="card t">
+        <span class="unit">Why this sits in a finance briefing</span>
+        <h4 style="margin-top:.3rem">Every one of these documents is also a remittance document</h4>
+        <p style="margin-top:.5rem">The lease agreements, the ground handling agreement and the GSA No Objection Certificate all reappear in the annual documentation set that supports outward remittance. An operations document that lapses does not only create an operations problem. It stops the money.</p>
       </div>
     </div>
-    <div class="notes"><b>Presenter note</b>The last bullet on the left is the one that surprises people: remittance can only come from funds actually in the account. An airline cannot bridge a thin month with a loan and remit against it.</div>
+    <div class="notes"><b>Presenter note</b>Land the closing card. It is the reason a finance team should care about a cargo village lease.</div>
   </div>
 </section>
 
-<!-- ============ 09 AD BANK ROLE ============ -->
-<section class="slide dense" id="s9" data-act="Banking" data-title="AD bank's role and the waiver-clause bridge">
+<!-- ============ 08 NBR ============ -->
+<section class="slide dense" id="s8" data-act="Establishment" data-title="NBR and double taxation">
   <div class="wrap">
-    <div class="eyebrow teal rv">Part 2 &nbsp;.&nbsp; 06 &nbsp;/&nbsp; Bangladesh Bank &amp; AD bank</div>
-    <h2 class="big rv">The AD bank's role, and the waiver-clause bridge.</h2>
-    <p class="lede rv" style="margin-top:.4rem;max-width:86ch">An Authorized Dealer bank maintains a dedicated account and transaction records for Vietnam Airlines, ensuring segregation, monitoring, disbursement, reconciliation and remittance. It then executes all procedure in favour of the airline and submits remittance documents to Bangladesh Bank.</p>
-    <div class="grid g2 rv" style="margin-top:1.25rem">
-      <div class="card m">
-        <span class="unit">Carried over from Part 1</span>
-        <h4>Waiver Clause 7 &amp; 8</h4>
-        <p>The same BIDA permission-letter conditions. Bangladesh Bank and the AD bank rely on these being satisfied before outward remittance can proceed.</p>
-      </div>
-      <div class="card t">
-        <span class="unit">One-time</span>
-        <h4>Notification to Central Bank</h4>
-        <p>Formal notification to Bangladesh Bank of Flyport as the appointed GSA for Vietnam Airlines.</p>
-      </div>
-      <div class="card t">
-        <span class="unit">Recurring</span>
-        <h4>Monthly Reporting</h4>
-        <p>Routine monthly reporting to Bangladesh Bank on the airline's collections and remittances.</p>
-      </div>
-      <div class="card t">
-        <span class="unit">Recurring</span>
-        <h4>Monthly Post-Facto Approval</h4>
-        <p>Each month's remittance is submitted for Bangladesh Bank's after-the-fact approval.</p>
-      </div>
-    </div>
-    <div class="notes"><b>Presenter note</b>Two of these four are one-time and two repeat forever. Make that split explicit, it is the difference between a launch task and an operating cost.</div>
-  </div>
-</section>
-
-<!-- ============ 10 TWO FX MECHANISMS ============ -->
-<section class="slide wide dense" id="s10" data-act="Banking" data-title="Two special-purpose FX mechanisms">
-  <div class="wrap">
-    <div class="eyebrow teal rv">Part 2 &nbsp;.&nbsp; 07 &nbsp;/&nbsp; Bangladesh Bank &amp; AD bank</div>
-    <h2 class="big rv">Two special-purpose foreign-exchange mechanisms.</h2>
-    <div class="split rv" style="--cols:1fr 1fr;margin-top:1.2rem">
-      <div class="card t">
-        <span class="unit">2021 Circular No. 1</span>
-        <h4 style="margin-top:.3rem">Fuel / oil purchase in foreign exchange</h4>
-        <ul class="tick tight t" style="margin-top:.65rem">
-          <li>Airlines already pay local expenses from local earnings under GFET.</li>
-          <li>To ease fuel and oil purchase, the AD bank may issue <b>FX drafts favouring state-owned fuel and oil selling companies</b>.</li>
-          <li>Equivalent Taka must be shown in the disbursement statement with documentary evidence.</li>
-          <li>Payments are reported via the online TM Form monitoring system, with schedules to Bangladesh Bank's Statistics Department.</li>
-          <li>ADs receiving the FX drafts may retain amounts in margin or approved FC accounts, with Bangladesh Bank permission, used only for import-payment settlement.</li>
-        </ul>
-      </div>
-      <div class="card m">
-        <span class="unit">2023 Circular No. 3</span>
-        <h4 style="margin-top:.3rem">OEMS / OIMS freight certificates</h4>
-        <ul class="tick tight m" style="margin-top:.65rem">
-          <li>ADs now generate <b>two digital forms</b> instead of manual certificates.</li>
-          <li><b>Form FF-Export Prepaid</b>, freight charge on a prepaid basis against export, generated via OEMS.</li>
-          <li><b>Form FF-Import Collect</b>, freight charge against FOB or similar import, generated via OIMS.</li>
-          <li>The exporter or importer provides the relevant form to the freight forwarder, airline or shipping company.</li>
-          <li>The form is then submitted to the designated AD bank when remitting surplus earnings or freight charges to head office or principal abroad.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="notes"><b>Presenter note</b>The 2023 change is purely mechanical but it breaks old checklists. Anyone still expecting a manual freight certificate will hold up the file.</div>
-  </div>
-</section>
-
-<!-- ============ 11 PROCESS FLOW ============ -->
-<section class="slide wide" id="s11" data-act="Remittance" data-title="Our remittance process flow">
-  <div class="wrap">
-    <div class="hrow rv">
-      <div class="lot" data-lot="transfer" style="--lw:150px;--lh:60px" aria-hidden="true"></div>
+    <div class="eyebrow rv">03 &nbsp;.&nbsp; NBR &nbsp;/&nbsp; Double taxation relief</div>
+    <h2 class="big rv">Treaty relief only exists once it is a certificate the bank can hold.</h2>
+    <div class="split tight rv" style="margin-top:1.3rem">
       <div>
-        <div class="eyebrow mag">Part 3 &nbsp;.&nbsp; 08 &nbsp;/&nbsp; Monthly remittance operations</div>
-        <h2 class="big">Our remittance process flow.</h2>
+        <div class="card q">
+          <span class="unit">The instrument</span>
+          <h4 style="margin-top:.3rem">Bangladesh and Vietnam double taxation agreement</h4>
+          <p style="margin-top:.5rem">The agreement between Bangladesh and Vietnam for the avoidance of double taxation is the basis for the exemption. Bangladesh domestic law is now the Income Tax Act 2023, which succeeded the Income Tax Ordinance 1984, and the treaty continues to operate alongside it.</p>
+          <p style="margin-top:.55rem">Under the shipping and air transport article, profits from operating aircraft in international traffic are taxable in the enterprise's home state. In practice this means Vietnam Airlines' core international carriage income is not taxed a second time in Bangladesh.</p>
+        </div>
+        <ul class="tick" style="margin-top:1rem">
+          <li>Obtain or renew a Tax Residency Certificate from the Vietnamese tax authority for the relevant fiscal year.</li>
+          <li>File it with NBR together with a declaration of no permanent establishment in Bangladesh.</li>
+          <li>NBR issues the exemption or reduced withholding certificate.</li>
+          <li>The AD bank requires a valid, unexpired certificate on file before applying treaty terms to any outward remittance.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="card r">
+          <span class="unit">The failure mode</span>
+          <h4 style="margin-top:.3rem">An expired certificate stops a clean remittance</h4>
+          <p style="margin-top:.5rem">The certificate is renewed on an annual cycle. If it lapses mid year, the bank has to apply full domestic withholding to a remittance that is treaty exempt, and recovering that afterwards is slow. Flyport tracks the expiry as a standing calendar date rather than an inbox reminder.</p>
+        </div>
+        <div class="card" style="margin-top:.9rem">
+          <span class="unit">Also on the tax file</span>
+          <ul class="tick tight" style="margin-top:.5rem">
+            <li>Valid tax exemption certificate from the National Board of Revenue</li>
+            <li>Updated VAT registration, trade licence and tax certificate</li>
+            <li>Advance income tax and refund statements, monthly</li>
+            <li>Challans for VAT and tax actually paid, monthly</li>
+            <li>Payment summaries for embarkation fee, airport charges and passenger development fee</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <p class="lede rv" style="margin-top:.5rem;max-width:76ch">Our own AD-bank procedure, start to finish, for a single month's cycle.</p>
-    <div class="flow six rv" style="margin-top:1.3rem">
-      <div class="step"><span class="sn">01</span><h4>Files received from client</h4><p>Passenger, cargo and disbursement files.</p></div>
-      <div class="step"><span class="sn">02</span><h4>Bank scrutinizes files</h4><p>Discrepancies notified or referred back.</p></div>
-      <div class="step"><span class="sn">03</span><h4>Client rectifies discrepancies</h4><p>Corrected files resubmitted.</p></div>
-      <div class="step"><span class="sn">04</span><h4>Surplus earning confirmed</h4><p>Net remittable amount agreed.</p></div>
-      <div class="step"><span class="sn">05</span><h4>Remittance executed</h4><p>AD bank transfers funds abroad.</p></div>
-      <div class="step"><span class="sn">06</span><h4>Filed for Post Facto Approval</h4><p>Submitted to Bangladesh Bank after remittance.</p></div>
-    </div>
-    <div class="card m rv" style="margin-top:1.4rem">
-      <span class="unit">Note the order</span>
-      <p style="margin-top:.4rem"><b class="hlm">Bangladesh Bank approval is Post Facto.</b> It is obtained after the remittance is executed, not before.</p>
-    </div>
-    <div class="notes"><b>Presenter note</b>Steps two and three are the loop. A single unsupported collection line sends the whole month back, and the month behind it starts stacking. That loop, not policy, is what builds repatriation backlogs.</div>
+    <p class="foot rv">Treaty article numbering and rates should be confirmed against the operative text of the Bangladesh and Vietnam agreement before it is relied on in a filing. This page states the mechanism, not the assessment.</p>
+    <div class="notes"><b>Presenter note</b>Resist quoting a withholding percentage from memory in the room. State the mechanism, promise the article reference in writing.</div>
   </div>
 </section>
 
-<!-- ============ 12 CALCULATOR ============ -->
-<section class="slide wide dense" id="s12" data-act="Remittance" data-title="Monthly surplus-earnings calculator">
+<!-- ============ 09 THE FOUR CIRCULARS ============ -->
+<section class="slide wide dense" id="s9" data-act="The money" data-title="The four circulars">
   <div class="wrap">
-    <div class="eyebrow mag rv">Part 3 &nbsp;.&nbsp; 09 &nbsp;/&nbsp; Monthly remittance operations</div>
-    <h2 class="big rv">Monthly surplus-earnings calculator.</h2>
-    <p class="lede rv" style="margin-top:.35rem;max-width:78ch">The statement the AD bank builds each month. Move any input. The figures are illustrative launch-phase numbers, not a forecast. The structure is the regulatory one.</p>
+    <div class="eyebrow teal rv">04 &nbsp;.&nbsp; Bangladesh Bank &nbsp;/&nbsp; The legal spine</div>
+    <h2 class="big rv">Four circulars from the Foreign Exchange Operation Department. Between them, they are the entire remittance regime.</h2>
+    <p class="lede rv" style="margin-top:.5rem">All four sit on top of Chapter 10 of the Guidelines for Foreign Exchange Transactions 2018. Read them in issue order and the current process explains itself.</p>
+    <div class="scroll-x rv" style="margin-top:1.3rem">
+      <table class="dt">
+        <thead><tr><th>Circular</th><th>Date</th><th>What it changed</th><th>What it means for Vietnam Airlines</th></tr></thead>
+        <tbody>
+          <tr class="hi">
+            <td class="c">SPA No. 01</td><td class="c">3 Sep 2020</td>
+            <td>Surplus earnings may be calculated on passage and freight collections, on actual realisation. Form P and Form P-2 abolished. IATA members file system generated BSP documents instead of passenger statements.</td>
+            <td>This is the governing formula. It is also the circular that made the process workable, by removing per passenger documentation.</td>
+          </tr>
+          <tr>
+            <td class="c">SPA No. 01</td><td class="c">15 Nov 2021</td>
+            <td>ADs designated for outward remittance may issue drafts in foreign exchange favouring state owned fuel and oil selling companies, with the equivalent taka shown in the disbursement statement.</td>
+            <td>Fuel uplift can be settled in foreign exchange through the designated AD, and appears as an evidenced line in the monthly disbursement statement.</td>
+          </tr>
+          <tr>
+            <td class="c">SPA No. 02</td><td class="c">21 Nov 2021</td>
+            <td>Resident general sales agents acting for more than one carrier must maintain separate bank accounts for each airline, so that collections from each operation stay separate.</td>
+            <td>Vietnam Airlines gets a dedicated, ring fenced account. This is a legal requirement on the GSA, not a service promise.</td>
+          </tr>
+          <tr>
+            <td class="c">SPA No. 03</td><td class="c">9 Aug 2023</td>
+            <td>Freight certificates move online. Form FF Export Prepaid is generated through the Online Export Monitoring System and Form FF Import Collect through the Online Import Monitoring System, replacing manual certificates.</td>
+            <td>Cargo freight collected in taka has to be supported by a system generated Form FF collected from the exporter or importer before it can be remitted.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid g3 rv" style="margin-top:1.3rem">
+      <div class="card t"><span class="unit">Underneath all four</span><h4>GFET 2018, Chapter 10</h4><p>Paragraphs 1 and 2(A) of Chapter 10 and the relevant paragraphs of Chapter 12 remain the base text. The circulars amend and simplify, they do not replace.</p></div>
+      <div class="card t"><span class="unit">Issued under</span><h4>Foreign Exchange Regulation Act, 1947</h4><p>These are directions to Authorized Dealers. The airline's counterparty for compliance is its AD bank, and the bank's counterparty is Bangladesh Bank.</p></div>
+      <div class="card r"><span class="unit">Standing check</span><h4>Confirm nothing has superseded these</h4><p>The Foreign Exchange Operation Department issues circulars continuously. Before each annual review, Flyport re-checks the FE circular index rather than assuming this set is still current.</p></div>
+    </div>
+    <div class="notes"><b>Presenter note</b>This table is the credibility slide. It is also the one to leave with them. Note that the two circulars both numbered 01 are from different years; the numbering resets annually and it confuses people.</div>
+  </div>
+</section>
+
+<!-- ============ 10 WHAT SURPLUS MEANS ============ -->
+<section class="slide" id="s10" data-act="The money" data-title="What surplus earnings means">
+  <div class="wrap">
+    <div class="eyebrow teal rv">04 &nbsp;.&nbsp; Bangladesh Bank &nbsp;/&nbsp; The definition</div>
+    <h2 class="big rv">Three conditions, and remittance out of funds actually held.</h2>
+    <p class="lede rv" style="margin-top:.5rem">SPA Circular No. 01 of 3 September 2020 permits ADs to remit surplus earnings against passage and freight based on actual realisation, provided three conditions are met.</p>
+    <div class="grid g3 rv" style="margin-top:1.4rem">
+      <div class="card t"><span class="unit">Condition i</span><h4>All collections supported by bank statements</h4><p>The bank statement is the primary evidence. Not the sales report, not the ledger. Collections that did not land in the account did not happen.</p></div>
+      <div class="card t"><span class="unit">Condition ii</span><h4>Minimum ten percent provision maintained</h4><p>A minimum provision of ten percent on collections is held against refunds for unavailed journeys. The unused portion may be added back in a following period.</p></div>
+      <div class="card t"><span class="unit">Condition iii</span><h4>All disbursements adjusted</h4><p>Disbursements, accrued expenses, refunds, and income tax paid or payable are all deducted before anything is treated as surplus.</p></div>
+    </div>
+    <div class="split rv" style="margin-top:1.4rem">
+      <div class="card r">
+        <span class="unit">The sentence that catches people</span>
+        <h4 style="margin-top:.3rem">Remittance is allowed out of the fund available, without borrowed funds, in the designated bank account.</h4>
+        <p style="margin-top:.55rem">An airline cannot fund a remittance from a facility, an intercompany advance, or next month's collections. If the money is not sitting in the designated account, it does not go. This is why the account structure in SPA Circular No. 02 matters so much, and why a shared agency account is not an option.</p>
+      </div>
+      <div>
+        <span class="unit">What replaced the old paperwork</span>
+        <ul class="tick t" style="margin-top:.7rem">
+          <li>Form P and Form P-2 from outgoing passengers are no longer required against ticket sales in local currency.</li>
+          <li>IATA member airlines file the BSP airline billing summary and the BSP statement summary, including system generated counter sales and excess baggage reports, plus a revenue and expenditure summary in the prescribed annexure.</li>
+          <li>Copies of supporting documents are no longer submitted, except bank statements and documents for taxes such as FATT, excise duty, embarkation fee and TDS.</li>
+          <li>Those documents are retained by the airline for production to the AD bank and to a Bangladesh Bank inspection team on request.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notes"><b>Presenter note</b>The retention point is the quiet one. The documents are not gone, they moved from submission to custody. If nobody owns custody, an inspection finds nothing.</div>
+  </div>
+</section>
+
+<!-- ============ 11 CALCULATOR ============ -->
+<section class="slide wide dense" id="s11" data-act="The money" data-title="Surplus earnings, computed">
+  <div class="wrap">
+    <div class="eyebrow rv">04 &nbsp;.&nbsp; The arithmetic &nbsp;/&nbsp; Live model</div>
+    <h2 class="big rv">Surplus earnings, computed the way the AD bank computes it.</h2>
+    <p class="lede rv" style="margin-top:.35rem;max-width:78ch">Move any input. The figures are illustrative launch phase numbers, not a forecast. The structure is the regulatory one.</p>
     <div class="calc rv" style="margin-top:1.3rem">
       <div>
-        <span class="unit" style="display:block;margin-bottom:.6rem">A &nbsp;.&nbsp; Total collection for the month</span>
-        <div class="ctl"><label>Pax sales collection <b id="l_pax">0</b></label><input type="range" id="r_pax" min="0" max="150000000" step="500000" value="62000000"></div>
-        <div class="ctl"><label>Add: cargo sales collection <b id="l_cgo">0</b></label><input type="range" id="r_cgo" min="0" max="80000000" step="250000" value="18000000"></div>
-        <div class="ctl"><label>Add: airline's over-the-counter sale <b id="l_otc">0</b></label><input type="range" id="r_otc" min="0" max="30000000" step="100000" value="4500000"></div>
-        <div class="ctl"><label>Add: misc. receipts <b id="l_msc">0</b></label><input type="range" id="r_msc" min="0" max="15000000" step="50000" value="1200000"></div>
+        <span class="unit" style="display:block;margin-bottom:.6rem">A &nbsp;.&nbsp; Collections for the month</span>
+        <div class="ctl"><label>Passenger sales collection, BSP <b id="l_pax">0</b></label><input type="range" id="r_pax" min="0" max="150000000" step="500000" value="62000000"></div>
+        <div class="ctl"><label>Cargo sales collection, CASS <b id="l_cgo">0</b></label><input type="range" id="r_cgo" min="0" max="80000000" step="250000" value="18000000"></div>
+        <div class="ctl"><label>Airline over the counter sales <b id="l_otc">0</b></label><input type="range" id="r_otc" min="0" max="30000000" step="100000" value="4500000"></div>
+        <div class="ctl"><label>Miscellaneous receipts <b id="l_msc">0</b></label><input type="range" id="r_msc" min="0" max="15000000" step="50000" value="1200000"></div>
 
-        <span class="unit" style="display:block;margin:1.1rem 0 .6rem">B &nbsp;.&nbsp; Total disbursement for the month</span>
-        <div class="ctl"><label>Less: disbursement for the month <b id="l_dsb">0</b></label><input type="range" id="r_dsb" min="0" max="120000000" step="500000" value="41000000"></div>
-        <div class="ctl"><label>Less: other adjustment <b id="l_adj">0</b></label><input type="range" id="r_adj" min="0" max="25000000" step="100000" value="2300000"></div>
+        <span class="unit" style="display:block;margin:1.1rem 0 .6rem">B &nbsp;.&nbsp; Disbursements for the month</span>
+        <div class="ctl"><label>Disbursements <b id="l_dsb">0</b></label><input type="range" id="r_dsb" min="0" max="120000000" step="500000" value="41000000"></div>
+        <div class="ctl"><label>Other adjustments <b id="l_adj">0</b></label><input type="range" id="r_adj" min="0" max="25000000" step="100000" value="2300000"></div>
 
-        <span class="unit" style="display:block;margin:1.1rem 0 .6rem">C &nbsp;.&nbsp; Net provision (i &minus; ii)</span>
-        <div class="ctl"><label>i. Provision for refund, % of pax revenue <b class="m" id="l_rate">10%</b></label><input type="range" class="m" id="r_rate" min="10" max="25" step="1" value="10"></div>
-        <div class="ctl"><label>ii. Unused provision, earlier period <b class="m" id="l_back">0</b></label><input type="range" class="m" id="r_back" min="0" max="20000000" step="100000" value="5900000"></div>
+        <span class="unit" style="display:block;margin:1.1rem 0 .6rem">C &nbsp;.&nbsp; Net refund provision</span>
+        <div class="ctl"><label>Provision rate on passenger revenue <b class="m" id="l_rate">10%</b></label><input type="range" class="m" id="r_rate" min="10" max="25" step="1" value="10"></div>
+        <div class="ctl"><label>Unused provision added back from prior period <b class="m" id="l_back">0</b></label><input type="range" class="m" id="r_back" min="0" max="20000000" step="100000" value="5900000"></div>
         <div class="ctl"><label>Conversion rate applied by the AD bank <b id="l_fx">0</b></label><input type="range" id="r_fx" min="100" max="145" step="0.5" value="122.5"></div>
-        <p class="small" style="margin-top:.55rem">Misc. receipts cover excess baggage, postal earnings and extra charges. The provision slider starts at the regulatory minimum of ten percent. Raising it models a deeper refund buffer, which is permitted.</p>
+        <p class="small" style="margin-top:.55rem">The slider starts at the regulatory minimum of ten percent. Raising it models a deeper refund buffer, which is permitted.</p>
       </div>
 
       <div>
         <div class="out">
-          <span class="unit">Net surplus earnings to be remitted for the month</span>
+          <span class="unit">Net surplus earnings to be remitted</span>
           <div class="big-n" id="o_net">BDT 0</div>
           <div class="usd">approximately <span id="o_usd" class="hl">USD 0</span> at the modelled conversion rate</div>
           <div class="bar" id="o_bar">
@@ -1025,203 +1038,419 @@ body[data-export="on"] .out{box-shadow:none}
           <div class="legend"><span><i style="background:var(--risk)"></i>Disbursements</span><span><i style="background:var(--mag)"></i>Net provision</span><span><i style="background:var(--teal)"></i>Remittable</span></div>
           <div class="scroll-x" style="margin-top:1rem">
           <table class="dt">
-            <tr><td>Pax sales collection</td><td class="n" id="t_pax">0</td></tr>
-            <tr><td>Add: cargo sales collection</td><td class="n" id="t_cgo">0</td></tr>
-            <tr><td>Add: airline's over-the-counter sale</td><td class="n" id="t_otc">0</td></tr>
-            <tr><td>Add: misc. receipts</td><td class="n" id="t_msc">0</td></tr>
+            <tr><td>Passenger sales collection</td><td class="n" id="t_pax">0</td></tr>
+            <tr><td>Add cargo sales collection</td><td class="n" id="t_cgo">0</td></tr>
+            <tr><td>Add over the counter sales</td><td class="n" id="t_otc">0</td></tr>
+            <tr><td>Add miscellaneous receipts</td><td class="n" id="t_msc">0</td></tr>
             <tr class="tot"><td><b>A. Total collection for the month</b></td><td class="n" id="t_A">0</td></tr>
-            <tr><td>Less: disbursement for the month</td><td class="n" id="t_dsb">0</td></tr>
-            <tr><td>Less: other adjustment</td><td class="n" id="t_adj">0</td></tr>
+            <tr><td>Less disbursements</td><td class="n" id="t_dsb">0</td></tr>
+            <tr><td>Less other adjustments</td><td class="n" id="t_adj">0</td></tr>
             <tr class="tot"><td><b>B. Total disbursement for the month</b></td><td class="n" id="t_B">0</td></tr>
-            <tr><td>i. Provision for refund, current month</td><td class="n" id="t_p1">0</td></tr>
-            <tr><td>ii. Unused provision, previous month</td><td class="n" id="t_p2">0</td></tr>
-            <tr class="tot"><td><b>C. Net provision (i &minus; ii)</b></td><td class="n" id="t_C">0</td></tr>
-            <tr class="tot hi"><td><b>Net surplus earnings to be remitted (A &minus; B &minus; C)</b></td><td class="n" id="t_N">0</td></tr>
+            <tr><td>Provision for refund, current month</td><td class="n" id="t_p1">0</td></tr>
+            <tr><td>Less unused provision, prior period</td><td class="n" id="t_p2">0</td></tr>
+            <tr class="tot"><td><b>C. Net provision</b></td><td class="n" id="t_C">0</td></tr>
+            <tr class="tot hi"><td><b>Net surplus earnings, A less B less C</b></td><td class="n" id="t_N">0</td></tr>
           </table>
           </div>
         </div>
+        
       </div>
     </div>
-    <div class="notes"><b>Presenter note</b>Do the demonstration live. Drag the provision rate from ten to fifteen and let the room watch the remittable number fall. Agree the provision base with the AD bank once and hold it constant.</div>
+    <div class="notes"><b>Presenter note</b>Do the demonstration live. Drag the provision rate from ten to fifteen and let the room watch the remittable number fall. That single interaction explains more about Bangladeshi FX policy than any paragraph. If finance asks about the provision base: it is BSP passenger sales plus counter sales here. Treating miscellaneous receipts as passenger revenue widens the base and lowers the remittable figure, so agree the base with the AD bank once and hold it constant.</div>
   </div>
 </section>
 
-<!-- ============ 13 PFA & FILE TYPES ============ -->
-<section class="slide wide dense" id="s13" data-act="Remittance" data-title="Post Facto Approval and file types">
+<!-- ============ 12 ACCOUNT STRUCTURE ============ -->
+<section class="slide" id="s12" data-act="The money" data-title="One account per airline">
   <div class="wrap">
-    <div class="eyebrow mag rv">Part 3 &nbsp;.&nbsp; 10 &nbsp;/&nbsp; Monthly remittance operations</div>
-    <h2 class="big rv">Post Facto Approval, and the airline file types.</h2>
-    <div class="split rv" style="--cols:1.12fr .88fr;margin-top:1.2rem">
+    <div class="eyebrow mag rv">05 &nbsp;.&nbsp; SPA Circular No. 02, 21 November 2021</div>
+    <h2 class="big rv">Separate accounts are the law, and the reason the file is provable.</h2>
+    <div class="split tight rv" style="margin-top:1.3rem">
       <div>
-        <span class="unit" style="display:block;margin-bottom:.6rem">Post Facto Approval (PFA)</span>
-        <div class="grid" style="gap:.7rem">
-          <div class="card m">
-            <h4>Comes after remittance</h4>
-            <p>PFA is obtained from Bangladesh Bank after the transfer, not as a pre-approval.</p>
-          </div>
-          <div class="card t">
-            <h4>Six-month repatriation window</h4>
-            <p>Airlines can remit funds up to six months from the date documents were last approved by Bangladesh Bank.</p>
-          </div>
-          <div class="card r">
-            <h4>Fully manual today</h4>
-            <p>The end-to-end PFA flow runs on hard-copy documentation, with verification at various levels.</p>
-          </div>
+        <div class="card m">
+          <span class="unit">What the circular decided</span>
+          <p style="margin-top:.4rem">There are no restrictions on a resident entity acting as general sales agent for more than one airline. To bring discipline into remittances of surplus earnings out of respective collections, resident general sales agents must maintain separate bank accounts for each airline, to deposit collections from the respective operations.</p>
+          <p style="margin-top:.55rem">ADs were directed to guide multi carrier agents into that structure within three months of issuance, so it is long settled practice rather than a new requirement.</p>
         </div>
+        <ul class="tick m" style="margin-top:1rem">
+          <li>Vietnam Airlines collections never sit in a pooled agency account.</li>
+          <li>The bank statement for that account is, by itself, the evidence for condition (i) of the surplus earnings test.</li>
+          <li>Disbursements for the carrier are made from the same account, so the statement reconciles both sides of the calculation.</li>
+          <li>An inspection team can trace a single month end to end without a reconciliation schedule.</li>
+        </ul>
       </div>
       <div>
-        <span class="unit" style="display:block;margin-bottom:.6rem">Airline file types</span>
-        <div class="card q">
-          <span class="unit">Core files</span>
-          <ul class="tick" style="margin-top:.5rem">
-            <li>Passenger collection file</li>
-            <li>Cargo collection file</li>
-            <li>Disbursement file</li>
-          </ul>
+        <div class="card t">
+          <span class="unit">The AD bank's role</span>
+          <h4 style="margin-top:.3rem">A dedicated account and a segregated transaction record</h4>
+          <p style="margin-top:.5rem">Under the applicable foreign exchange guidelines the Authorized Dealer bank maintains a dedicated bank account and transaction record for each airline, to ensure proper segregation, monitoring, disbursement, reconciliation and remittance of airline related funds.</p>
+          <p style="margin-top:.55rem">The AD bank then carries out the procedure on the airline's behalf and submits the remittance documents to Bangladesh Bank. In practice the bank is the airline's filing agent, and the quality of the file it receives determines how fast it moves.</p>
         </div>
-        <div class="card t" style="margin-top:.7rem">
-          <span class="unit">Supplementary files</span>
-          <ul class="tick t" style="margin-top:.5rem">
-            <li>Miscellaneous file</li>
-            <li>Refund statement file</li>
-          </ul>
+        <div class="card q" style="margin-top:.9rem">
+          <span class="unit">Practical consequence</span>
+          <h4 style="margin-top:.3rem">Keep one AD relationship</h4>
+          <p style="margin-top:.5rem">Holding the foreign currency account and every remittance with a single AD bank keeps one continuous transaction history for monitoring purposes. Splitting the relationship across banks doubles the explaining and halves the speed.</p>
         </div>
       </div>
     </div>
-    <div class="notes"><b>Presenter note</b>Five file types, three of which are mandatory every month. The two supplementary ones appear whenever there is a refund or a miscellaneous receipt, which in practice is most months.</div>
+    <div class="notes"><b>Presenter note</b>This is the slide where Flyport's structural advantage is a regulatory fact rather than a claim. Do not oversell it, just read the circular.</div>
   </div>
 </section>
 
-<!-- ============ 14 ANNUAL DOCUMENTATION ============ -->
-<section class="slide wide dense" id="s14" data-act="Documents" data-title="Documentation required, annual basis">
+<!-- ============ 13 FUEL + FORM FF ============ -->
+<section class="slide" id="s13" data-act="The money" data-title="Fuel and cargo freight">
+  <div class="wrap">
+    <div class="eyebrow teal rv">06 &nbsp;.&nbsp; The two special cases</div>
+    <h2 class="big rv">Fuel settles in foreign exchange. Cargo freight now needs a system generated form.</h2>
+    <div class="split rv" style="margin-top:1.3rem">
+      <div class="card t">
+        <span class="unit">SPA Circular No. 01 &nbsp;.&nbsp; 15 November 2021</span>
+        <h4 style="margin-top:.3rem">Purchase of fuel and oil in foreign exchange</h4>
+        <p style="margin-top:.5rem">Airlines are permitted to pay local expenses from local earnings under GFET. To facilitate fuel purchase, ADs designated for outward remittance may issue drafts in foreign exchange favouring state owned fuel and oil selling companies.</p>
+        <ul class="tick tight t" style="margin-top:.7rem">
+          <li>The equivalent taka must be shown in the disbursement statement, supported by documentary evidence.</li>
+          <li>Payments by foreign exchange draft are reported in the online TM Form monitoring system.</li>
+          <li>The receiving oil company may encash, or retain the amount in a margin or approved foreign currency account for settling import payments.</li>
+        </ul>
+        <p class="small" style="margin-top:.7rem">For Vietnam Airlines this means fuel uplift is a settled, evidenced disbursement line rather than an FX exposure to manage separately.</p>
+      </div>
+      <div class="card t">
+        <span class="unit">SPA Circular No. 03 &nbsp;.&nbsp; 9 August 2023</span>
+        <h4 style="margin-top:.3rem">Form FF, generated online rather than issued by hand</h4>
+        <p style="margin-top:.5rem">ADs no longer issue freight certificates manually. They generate them in Bangladesh Bank's own systems.</p>
+        <ul class="tick tight t" style="margin-top:.7rem">
+          <li><b>Form FF Export Prepaid</b> is generated in the Online Export Monitoring System, in favour of the exporter.</li>
+          <li><b>Form FF Import Collect</b> is generated in the Online Import Monitoring System, in favour of the importer.</li>
+          <li>The exporter or importer provides the form to the airline as support for freight charges received in local currency.</li>
+          <li>The airline collects it and submits it to the designated AD when remitting freight charges or surplus earnings to head office.</li>
+        </ul>
+        <p class="small" style="margin-top:.7rem">The operational point: the form originates with the shipper's bank, not with the airline. Cargo sales made without chasing the Form FF create a remittance blockage months later.</p>
+      </div>
+    </div>
+    <div class="card r rv" style="margin-top:1.1rem">
+      <span class="unit">Process design consequence</span>
+      <h4 style="margin-top:.3rem">Form FF collection has to be part of the cargo booking workflow, not the month end close</h4>
+      <p style="margin-top:.5rem">By the time a month end file is being assembled, the shipper has moved on. Flyport's cargo desk treats the Form FF as a condition of releasing the airway bill documentation, which is the only point in the chain where the counterparty still has a reason to respond.</p>
+    </div>
+    <div class="notes"><b>Presenter note</b>The last card is the operational insight in this deck that a competitor GSA will not have thought through. Spend a beat on it.</div>
+  </div>
+</section>
+
+<!-- ============ 14 PROCESS FLOW ============ -->
+<section class="slide wide" id="s14" data-act="The cycle" data-title="The remittance process">
+  <div class="wrap">
+    <div class="hrow rv">
+      <div class="lot" data-lot="transfer" style="--lw:150px;--lh:60px" aria-hidden="true"></div>
+      <div>
+        <div class="eyebrow mag ">07 &nbsp;.&nbsp; The monthly remittance process</div>
+        <h2 class="big ">Five steps forward, one loop back. The loop is where months are lost.</h2>
+      </div>
+    </div>
+    <div class="flow rv" style="margin-top:1.4rem">
+      <div class="step"><span class="sn">01</span><h4>Files received from the airline</h4><p>Passenger, cargo and disbursement files handed to the GSA and on to the AD bank.</p></div>
+      <div class="step"><span class="sn">02</span><h4>Bank scrutiny</h4><p>The AD bank scrutinises the files and notifies discrepancies, or refers them back.</p></div>
+      <div class="step"><span class="sn">03</span><h4>Surplus earnings confirmation</h4><p>The computation is agreed and the remittable figure is confirmed.</p></div>
+      <div class="step"><span class="sn">04</span><h4>Remittance execution</h4><p>The AD bank converts and transfers to Vietnam Airlines head office.</p></div>
+      <div class="step"><span class="sn">05</span><h4>Post facto approval filing</h4><p>The file is lodged with Bangladesh Bank for post facto approval, after the money has moved.</p></div>
+    </div>
+    <div class="split rv" style="margin-top:1.4rem">
+      <div class="card r">
+        <span class="unit">The loop</span>
+        <h4 style="margin-top:.3rem">Discrepancy rectification by the client</h4>
+        <p style="margin-top:.5rem">Step two returns to step one every time a file does not reconcile. There is no partial pass. A single unsupported collection line sends the whole month back, and the month behind it starts stacking up. Foreign carrier repatriation backlogs in this market are built almost entirely out of this loop, not out of policy.</p>
+        <p style="margin-top:.55rem"><b class="hlm">What Flyport does about it:</b> the file is built to bank specification before it is submitted, and the discrepancy conversation happens inside Flyport rather than between the bank and Hanoi.</p>
+      </div>
+      <div class="card t">
+        <span class="unit">The unusual part</span>
+        <h4 style="margin-top:.3rem">Approval comes after the money leaves</h4>
+        <p style="margin-top:.5rem">Post facto approval is obtained from Bangladesh Bank after the remittance, not before it. Bangladesh Bank allows airlines to repatriate for up to six months of post facto approval, meaning funds can be remitted up to six months from the date of the documents last approved.</p>
+        <p style="margin-top:.55rem">The end to end flow is manual, with hard copy documentation submitted and verified at several levels. Nothing about it is automated, which is why the discipline sits in the preparation.</p>
+      </div>
+    </div>
+    <div class="notes"><b>Presenter note</b>Emphasise the inversion. Post facto approval means the airline is exposed between remittance and approval, and a rejected file after the fact is a much worse conversation than a delayed one.</div>
+  </div>
+</section>
+
+<!-- ============ 15 FILES ============ -->
+<section class="slide dense" id="s15" data-act="The cycle" data-title="The file types">
+  <div class="wrap">
+    <div class="eyebrow rv">07 &nbsp;.&nbsp; What is actually in the monthly submission</div>
+    <h2 class="big rv">Three core files, two supplementary. Everything else is evidence for them.</h2>
+    <div class="grid g3 rv" style="margin-top:1.4rem">
+      <div class="card q"><span class="unit">Core file 01</span><h4>Passenger collection file</h4><p>BSP settled sales, direct and GSA sales, counter sales and excess baggage. The base for both the collection total and the refund provision.</p></div>
+      <div class="card q"><span class="unit">Core file 02</span><h4>Cargo collection file</h4><p>CASS settled sales and direct or GSA cargo sales, supported where required by Form FF from the exporter or importer.</p></div>
+      <div class="card q"><span class="unit">Core file 03</span><h4>Disbursement file</h4><p>Every local payment made from the account, including fuel, ground handling, catering, station costs, taxes and fees.</p></div>
+      <div class="card t"><span class="unit">Supplementary</span><h4>Miscellaneous file</h4><p>Excess baggage, postal earnings, extra charges and other receipts that belong in the collection total but not in the BSP report.</p></div>
+      <div class="card t"><span class="unit">Supplementary</span><h4>Refund statement file</h4><p>Refunds actually made in the period, which drive the add back of unused provision from the prior period.</p></div>
+      <div class="card m"><span class="unit">The binding evidence</span><h4>Bank statement</h4><p>The one document that cannot be substituted. Every collection and every disbursement in the three core files must appear on it.</p></div>
+    </div>
+    <div class="card rv" style="margin-top:1.2rem">
+      <span class="unit">How the files map to the calculation</span>
+      <div class="scroll-x" style="margin-top:.6rem">
+      <table class="dt">
+        <thead><tr><th>Calculation line</th><th>Source file</th><th>Evidence the bank checks it against</th></tr></thead>
+        <tbody>
+          <tr><td>Passenger sales collection</td><td>Passenger collection file</td><td>BSP airline billing summary and BSP statement summary</td></tr>
+          <tr><td>Cargo sales collection</td><td>Cargo collection file</td><td>CASS report and Form FF where freight was collected in taka</td></tr>
+          <tr><td>Counter and miscellaneous</td><td>Miscellaneous file</td><td>System generated counter sales and excess baggage reports</td></tr>
+          <tr><td>Disbursements</td><td>Disbursement file</td><td>Bank statement, plus challans for VAT and tax actually paid</td></tr>
+          <tr><td>Refund provision movement</td><td>Refund statement file</td><td>Prior period provision carried forward and refunds settled in period</td></tr>
+          <tr class="hi"><td>Every line above</td><td>All files</td><td>The dedicated account bank statement</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="notes"><b>Presenter note</b>The table is the working document. Finance teams tend to photograph this one.</div>
+  </div>
+</section>
+
+<!-- ============ 16 ANNUAL DOCS ============ -->
+<section class="slide" id="s16" data-act="The cycle" data-title="The annual document set">
   <div class="wrap">
     <div class="hrow rv">
       <div class="lot" data-lot="docstamp" style="--lw:86px;--lh:86px" aria-hidden="true"></div>
       <div>
-        <div class="eyebrow rv">Part 4 &nbsp;.&nbsp; 11 &nbsp;/&nbsp; Documentation &amp; roadmap</div>
-        <h2 class="big">Documentation required, annual basis.</h2>
+        <div class="eyebrow ">08 &nbsp;.&nbsp; Documents required annually</div>
+        <h2 class="big ">Eight documents that have to be valid on the day the bank looks.</h2>
       </div>
     </div>
-    <div class="grid g2 rv" style="margin-top:1.2rem">
-      <div class="card q"><h4>BIDA branch office permission</h4><p>Valid permission, with subsequent waiver approval, from BIDA.</p></div>
-      <div class="card m"><h4>Valid GSA agreement</h4><p>The appointment agreement between Vietnam Airlines and Flyport Ltd.</p></div>
-      <div class="card q"><h4>Office and cargo-village leases</h4><p>City and airport office lease agreement, plus airport cargo-village lease agreement.</p></div>
-      <div class="card q"><h4>CAAB &amp; Biman service agreements</h4><p>Agreements for fuel uplift, catering and ground handling.</p></div>
-      <div class="card m"><h4>No Objection Certificate</h4><p>NOC favouring the GSA, from CAAB.</p></div>
-      <div class="card t"><h4>Tax Exemption Certificate</h4><p>Valid certificate from NBR.</p></div>
-      <div class="card q"><h4>Expatriate work permits</h4><p>A valid work permit for each expatriate.</p></div>
-      <div class="card t"><h4>VAT, Trade Licence, Tax Certificate</h4><p>Updated VAT registration, Trade Licence and Tax Certificate.</p></div>
+    <p class="lede rv" style="margin-top:.4rem">None of these are hard to obtain. All of them are easy to let expire. Each one, expired, stops a remittance that is otherwise perfectly computed.</p>
+    <div class="grid g2 rv" style="margin-top:1.3rem">
+      <div>
+        <ul class="tick">
+          <li><b>Valid BIDA branch office permission</b>, with the subsequent waiver approval in place.</li>
+          <li><b>Valid General Sales Agent agreement</b> between Vietnam Airlines and Flyport.</li>
+          <li><b>City office and airport office lease agreements</b>, plus the airport cargo village lease.</li>
+          <li><b>Agreements with CAAB and Biman Bangladesh</b> for fuel uplift, catering and ground handling.</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="tick">
+          <li><b>No Objection Certificate from CAAB</b> favouring the General Sales Agent.</li>
+          <li><b>Valid tax exemption certificate</b> from the National Board of Revenue.</li>
+          <li><b>Valid work permit</b> for each expatriate employee.</li>
+          <li><b>Updated VAT registration, trade licence and tax certificate.</b></li>
+        </ul>
+      </div>
     </div>
-    <div class="notes"><b>Presenter note</b>Eight standing renewals. Track them as dates, not as tasks. Any one of them lapsing stops the monthly remittance file at the AD bank.</div>
+    <div class="split rv" style="margin-top:1.3rem">
+      <div class="card m">
+        <span class="unit">How Flyport holds this</span>
+        <h4 style="margin-top:.3rem">One expiry register, reviewed monthly, not annually</h4>
+        <p style="margin-top:.5rem">Each of the eight carries an expiry date and a renewal lead time. They are reviewed in the same monthly cycle as the remittance file, so a renewal is started ninety days out rather than discovered on a rejection notice.</p>
+      </div>
+      <div class="card r">
+        <span class="unit">The compounding risk</span>
+        <h4 style="margin-top:.3rem">An expiry found late costs more than one month</h4>
+        <p style="margin-top:.5rem">Because approval is post facto and the window runs from the date of documents last approved, a lapse does not just delay one remittance. It interrupts the chain the six month window is measured against, and the next file inherits the problem.</p>
+      </div>
+    </div>
+    <div class="notes"><b>Presenter note</b>The compounding point is the argument for a GSA that runs a register. Make it, then stop talking.</div>
   </div>
 </section>
 
-<!-- ============ 15 MONTHLY DOCUMENTATION ============ -->
-<section class="slide wide dense" id="s15" data-act="Documents" data-title="Documentation required, monthly basis">
+<!-- ============ 17 MONTHLY DOCS ============ -->
+<section class="slide wide dense" id="s17" data-act="The cycle" data-title="The monthly document set">
   <div class="wrap">
-    <div class="eyebrow rv">Part 4 &nbsp;.&nbsp; 12 &nbsp;/&nbsp; Documentation &amp; roadmap</div>
-    <h2 class="big rv">Documentation required, monthly basis.</h2>
-    <div class="grid g2 rv" style="margin-top:1.25rem">
-      <div class="card q">
-        <span class="unit">Regulatory annexures</span>
-        <ul class="tick" style="margin-top:.5rem">
-          <li>Annexure A, App. 5/42, 5/43, 5/46, 5/47</li>
+    <div class="eyebrow rv">08 &nbsp;.&nbsp; Documents required every month</div>
+    <h2 class="big rv">Eleven items, every month, for as long as the route operates.</h2>
+    <div class="grid g3 rv" style="margin-top:1.3rem">
+      <div class="card t">
+        <span class="unit">Prescribed forms</span>
+        <ul class="tick tight t" style="margin-top:.5rem">
+          <li>Annexure A, the statement of revenue, collection and expenditure</li>
+          <li>Appendices 5/42, 5/43, 5/46 and 5/47</li>
           <li>Annexure FA (I)</li>
           <li>Annexure 1</li>
           <li>Letter of undertaking</li>
         </ul>
       </div>
-      <div class="card t">
-        <span class="unit">Financial records</span>
-        <ul class="tick t" style="margin-top:.5rem">
+      <div class="card q">
+        <span class="unit">Financial evidence</span>
+        <ul class="tick tight" style="margin-top:.5rem">
           <li>Collection and disbursement summary</li>
-          <li>Bank statement</li>
-          <li>AIT and refund statement</li>
+          <li>Bank statement for the dedicated account</li>
+          <li>Advance income tax and refund statement</li>
+          <li>Challans for the relevant VAT and tax</li>
         </ul>
       </div>
       <div class="card m">
-        <span class="unit">Sales reports</span>
-        <ul class="tick m" style="margin-top:.5rem">
+        <span class="unit">Industry settlement</span>
+        <ul class="tick tight m" style="margin-top:.5rem">
           <li>BSP report</li>
           <li>CASS report</li>
           <li>Airline billing summary</li>
-        </ul>
-      </div>
-      <div class="card q">
-        <span class="unit">Tax &amp; fee payments</span>
-        <ul class="tick" style="margin-top:.5rem">
-          <li>Challans for relevant VAT and tax</li>
-          <li>Payment summary: embarkation, airport and passenger development fee</li>
+          <li>Payment summary for embarkation fee, airport charges and passenger development fee</li>
         </ul>
       </div>
     </div>
-    <div class="notes"><b>Presenter note</b>Twelve items, four groups, every month. Flyport assembles all four groups so Hanoi only ever sees one submitted file.</div>
+    <div class="card q rv" style="margin-top:1.2rem">
+      <span class="unit">Annexure A, the shape of it</span>
+      <div class="scroll-x" style="margin-top:.6rem">
+      <table class="dt">
+        <thead><tr><th>Section</th><th>Broken down as</th></tr></thead>
+        <tbody>
+          <tr><td>Cargo sales</td><td>Sales through CASS, first fortnight and second fortnight, then direct and GSA sales, to a total cargo revenue line</td></tr>
+          <tr><td>Passenger sales</td><td>Sales through BSP, first and second fortnight, then direct and GSA sales by fortnight, to a total passenger revenue line</td></tr>
+          <tr><td>Other collection</td><td>Miscellaneous collections for the month</td></tr>
+          <tr><td>Inward remittances</td><td>Inward remittances received during the month</td></tr>
+          <tr class="hi"><td>Total revenue (A)</td><td>Total revenue including inward remittances</td></tr>
+          <tr><td>Expenditure</td><td>Disbursements and other adjustments</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p class="small" style="margin-top:.65rem">Note the fortnightly split. BSP and CASS settle on a fortnightly cycle, so the statement is built the way the settlement arrives, not the way a management account is built. Airlines that map their own monthly ledger straight onto this form create the discrepancies that send the file back.</p>
+    </div>
+    <div class="notes"><b>Presenter note</b>The fortnightly observation is worth stating plainly. It is the most common source of a step two referral.</div>
   </div>
 </section>
 
-<!-- ============ 16 ROADMAP ============ -->
-<section class="slide wide dense" id="s16" data-act="Documents" data-title="The launch roadmap">
+<!-- ============ 18 CLOCK ============ -->
+<section class="slide wide" id="s18" data-act="The cycle" data-title="The monthly clock">
   <div class="wrap">
     <div class="hrow rv">
       <div class="lot" data-lot="cycle" style="--lw:88px;--lh:88px" aria-hidden="true"></div>
       <div>
-        <div class="eyebrow rv">Part 4 &nbsp;.&nbsp; 13 &nbsp;/&nbsp; Documentation &amp; roadmap</div>
-        <h2 class="big">The launch roadmap.</h2>
+        <div class="eyebrow teal ">09 &nbsp;.&nbsp; The operating rhythm</div>
+        <h2 class="big ">What a compliant month actually looks like.</h2>
+      </div>
+    </div>
+    <p class="lede rv" style="margin-top:.4rem">This is the cycle Flyport runs on behalf of the carrier. It is deliberately front loaded, so that a discrepancy is found while there is still time to fix it inside the same month.</p>
+    <div class="clock rv" style="margin-top:1.4rem">
+      <div class="wk">
+        <span class="w">Week 1</span>
+        <ul>
+          <li>Prior month bank statement drawn for the dedicated account</li>
+          <li>First fortnight BSP and CASS positions reconciled</li>
+          <li>Cargo desk closes outstanding Form FF collection for the prior month</li>
+          <li>Disbursement file assembled with challans attached</li>
+        </ul>
+      </div>
+      <div class="wk">
+        <span class="w">Week 2</span>
+        <ul>
+          <li>Second fortnight settlement reconciled and Annexure A built</li>
+          <li>Refund statement prepared and prior period provision movement computed</li>
+          <li>Surplus earnings computation drafted</li>
+          <li>Annual document expiry register reviewed</li>
+        </ul>
+      </div>
+      <div class="wk">
+        <span class="w">Week 3</span>
+        <ul>
+          <li>Full file submitted to the AD bank</li>
+          <li>Bank scrutiny, discrepancy queries answered by Flyport</li>
+          <li>Surplus earnings figure confirmed with the bank</li>
+          <li>Remittance instruction issued</li>
+        </ul>
+      </div>
+      <div class="wk">
+        <span class="w">Week 4</span>
+        <ul>
+          <li>Remittance executed to Vietnam Airlines head office</li>
+          <li>Post facto approval file lodged with Bangladesh Bank</li>
+          <li>CAAB traffic, cargo and mail statistics filed</li>
+          <li>Retained document custody updated for inspection readiness</li>
+        </ul>
       </div>
     </div>
     <div class="grid g4 rv" style="margin-top:1.3rem">
-      <div class="card q">
-        <span class="unit">Phase 1</span>
-        <h4>Legal &amp; Regulatory Foundation</h4>
-        <ul class="tick tight" style="margin-top:.55rem">
-          <li>Corporate registration: Trade Licence, TIN, BIN</li>
-          <li>BIDA branch permission and waiver clauses</li>
-          <li>CAAB designation under the ASA</li>
-        </ul>
-      </div>
-      <div class="card t">
-        <span class="unit">Phase 2</span>
-        <h4>Banking &amp; Tax Set-Up</h4>
-        <ul class="tick tight t" style="margin-top:.55rem">
-          <li>Dedicated AD-bank account for Vietnam Airlines</li>
-          <li>NBR double-taxation and tax exemption certificates</li>
-          <li>Bangladesh Bank GSA notification</li>
-        </ul>
-      </div>
-      <div class="card q">
-        <span class="unit">Phase 3</span>
-        <h4>Operational Launch</h4>
-        <ul class="tick tight" style="margin-top:.55rem">
-          <li>GSA appointment filed with CAAB</li>
-          <li>Fare, cargo tariff and schedule approval</li>
-          <li>Expatriate and local staffing, 1:5 ratio</li>
-        </ul>
-      </div>
-      <div class="card m">
-        <span class="unit">Phase 4</span>
-        <h4>Ongoing Monthly Cycle</h4>
-        <ul class="tick tight m" style="margin-top:.55rem">
-          <li>Remittance process flow and PFA filing</li>
-          <li>Annual and monthly documentation</li>
-        </ul>
-      </div>
+      <div class="stat"><div class="v teal">Monthly</div><div class="k">Bangladesh Bank reporting</div></div>
+      <div class="stat"><div class="v teal">Monthly</div><div class="k">Post facto approval filing</div></div>
+      <div class="stat"><div class="v">Monthly</div><div class="k">CAAB statistics return</div></div>
+      <div class="stat"><div class="v mag">Fortnightly</div><div class="k">BSP and CASS settlement</div></div>
     </div>
-    <p class="foot rv"><b class="hl">Still to be scoped:</b> Financial Statements and GSA Manpower.</p>
-    <div class="notes"><b>Presenter note</b>Nothing in phase two starts before phase one closes. Phase two is where launches quietly lose a month if the sequence was wrong.</div>
+    <div class="notes"><b>Presenter note</b>If the airline's own finance team wants a single ask from this deck, it is this: get the disbursement challans to week one. Everything downstream depends on it.</div>
   </div>
 </section>
 
-<!-- ============ 17 CLOSE ============ -->
-<section class="slide closer" id="s17" data-act="Close" data-title="Ready for launch">
+<!-- ============ 19 DIVISION OF LABOUR ============ -->
+<section class="slide wide" id="s19" data-act="Delivery" data-title="Who does what">
+  <div class="wrap">
+    <div class="eyebrow mag rv">10 &nbsp;.&nbsp; Division of labour</div>
+    <h2 class="big rv">What Vietnam Airlines keeps, and what Flyport carries.</h2>
+    <div class="scroll-x rv" style="margin-top:1.3rem">
+      <table class="dt">
+        <thead><tr><th>Workstream</th><th>Vietnam Airlines</th><th>Flyport</th><th>AD bank</th></tr></thead>
+        <tbody>
+          <tr><td>ASA designation and traffic rights</td><td>Owns</td><td>Supports and files locally</td><td>Not involved</td></tr>
+          <tr><td>BIDA branch permission and waivers</td><td>Applicant</td><td>Prepares and lodges the application set</td><td>Not involved</td></tr>
+          <tr><td>Expatriate visa and work permit</td><td>Nominates</td><td>Prepares and tracks renewal</td><td>Not involved</td></tr>
+          <tr><td>CAAB permissions, tariffs, schedule</td><td>Owns commercial content</td><td>Files and maintains approvals</td><td>Not involved</td></tr>
+          <tr><td>Tax residency certificate</td><td>Obtains in Vietnam</td><td>Files with NBR, tracks expiry</td><td>Relies on the certificate</td></tr>
+          <tr class="hi"><td>Dedicated collection account</td><td>Beneficiary</td><td>Operates and reconciles</td><td>Maintains and segregates</td></tr>
+          <tr><td>BSP and CASS settlement</td><td>Receives net</td><td>Collects and reconciles</td><td>Receives into the account</td></tr>
+          <tr><td>Form FF collection on cargo</td><td>Not involved</td><td>Collects at booking</td><td>Generates in OEMS or OIMS</td></tr>
+          <tr class="hi"><td>Monthly surplus computation</td><td>Reviews and approves</td><td>Prepares the full file</td><td>Scrutinises and confirms</td></tr>
+          <tr><td>Remittance execution</td><td>Receives funds</td><td>Instructs</td><td>Converts and transfers</td></tr>
+          <tr><td>Post facto approval filing</td><td>Not involved</td><td>Assembles the file</td><td>Submits to Bangladesh Bank</td></tr>
+          <tr><td>Document custody for inspection</td><td>Retains its own copies</td><td>Holds the local set</td><td>May call for production</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="foot rv">Allocation reflects the standard GSA operating model and is subject to the executed General Sales Agent agreement between the parties, which governs in the event of any difference.</p>
+    <div class="notes"><b>Presenter note</b>The two highlighted rows are the ones that matter commercially. Everything else is administration.</div>
+  </div>
+</section>
+
+<!-- ============ 20 RISK ============ -->
+<section class="slide wide" id="s20" data-act="Delivery" data-title="Where launches stall">
+  <div class="wrap">
+    <div class="eyebrow rv">11 &nbsp;.&nbsp; Risk register</div>
+    <h2 class="big rv">Six places a Bangladesh launch reliably loses time, and what removes each one.</h2>
+    <div class="grid g3 rv" style="margin-top:1.3rem">
+      <div class="card r">
+        <span class="unit">Risk 01 &nbsp;.&nbsp; High</span>
+        <h4>Waiver clauses discovered late</h4>
+        <p>The BIDA permission arrives, the account opens, and only at the first remittance does anyone read the outward remittance restrictions.</p>
+        <p style="margin-top:.5rem"><span class="pill mag">Mitigation</span> Waivers are applied for with the permission, not after it.</p>
+      </div>
+      <div class="card r">
+        <span class="unit">Risk 02 &nbsp;.&nbsp; High</span>
+        <h4>Form FF not collected at booking</h4>
+        <p>Cargo freight collected in taka without the supporting Form FF cannot be remitted, and the shipper has no incentive to help months later.</p>
+        <p style="margin-top:.5rem"><span class="pill mag">Mitigation</span> Form FF is a condition of documentation release at the cargo desk.</p>
+      </div>
+      <div class="card r">
+        <span class="unit">Risk 03 &nbsp;.&nbsp; Medium</span>
+        <h4>Ledger mapped monthly, settlement fortnightly</h4>
+        <p>Annexure A expects fortnightly BSP and CASS splits. A monthly management ledger will not reconcile to it and the file gets referred back.</p>
+        <p style="margin-top:.5rem"><span class="pill mag">Mitigation</span> Reporting is built on the settlement calendar from month one.</p>
+      </div>
+      <div class="card r">
+        <span class="unit">Risk 04 &nbsp;.&nbsp; Medium</span>
+        <h4>Tax exemption certificate lapses</h4>
+        <p>The certificate expires quietly and the bank applies full withholding to a treaty exempt remittance. Recovery is slow.</p>
+        <p style="margin-top:.5rem"><span class="pill mag">Mitigation</span> Expiry sits on the same monthly review as the remittance file.</p>
+      </div>
+      <div class="card r">
+        <span class="unit">Risk 05 &nbsp;.&nbsp; Medium</span>
+        <h4>Insufficient funds in the designated account</h4>
+        <p>Remittance may only be made out of funds available in the account, without borrowing. A timing mismatch simply stops the transfer.</p>
+        <p style="margin-top:.5rem"><span class="pill mag">Mitigation</span> Disbursement timing is planned against the settlement calendar.</p>
+      </div>
+      <div class="card r">
+        <span class="unit">Risk 06 &nbsp;.&nbsp; Watch</span>
+        <h4>Regulatory drift</h4>
+        <p>The Foreign Exchange Operation Department issues circulars continuously. A process built on a superseded instruction fails quietly.</p>
+        <p style="margin-top:.5rem"><span class="pill mag">Mitigation</span> The circular index is re-checked before each annual review.</p>
+      </div>
+    </div>
+    <div class="notes"><b>Presenter note</b>Risks one and two are the ones that actually cost carriers money in this market. If time is short, cover those two and hand over the page.</div>
+  </div>
+</section>
+
+<!-- ============ 21 CLOSE ============ -->
+<section class="slide closer" id="s21" data-act="Close" data-title="Coordinating every workstream">
   <div class="closer-bg" aria-hidden="true"></div>
   <img class="closer-plane" id="c_plane" alt="" aria-hidden="true">
   <div class="wrap">
-    <div class="eyebrow rv">Flyport Ltd. &nbsp;.&nbsp; General Sales Agent</div>
-    <h2 class="big rv" style="max-width:16ch">Ready for launch.</h2>
-    <p class="lede rv" style="margin-top:1rem;max-width:58ch">This pack brings our launch checklist, four Bangladesh Bank circulars, and our AD-bank remittance procedure into one plan, so Vietnam Airlines can launch in Bangladesh with every approval and every monthly filing accounted for.</p>
-    <div class="grid g4 rv" style="margin-top:1.5rem;max-width:62ch">
+    <div class="eyebrow rv">Flyport Limited &nbsp;.&nbsp; General Sales Agent</div>
+    <h2 class="big rv" style="max-width:20ch">So Vietnam Airlines can run the route, and the money simply arrives.</h2>
+    <p class="lede rv" style="margin-top:1rem;max-width:56ch">Six authorities, four circulars, eleven monthly documents and eight annual ones. Flyport carries all of it, holds the dedicated account, builds the file to bank specification, and answers the queries before they reach Hanoi.</p>
+    <div class="grid g4 rv" style="margin-top:1.5rem;max-width:60ch">
       <div class="stat"><div class="v">BIDA</div><div class="k">Permission and waivers</div></div>
-      <div class="stat"><div class="v">CAAB</div><div class="k">Permits, tariffs, schedule</div></div>
+      <div class="stat"><div class="v">CAAB</div><div class="k">Permits, tariffs, statistics</div></div>
       <div class="stat"><div class="v">NBR</div><div class="k">Treaty relief, kept live</div></div>
       <div class="stat"><div class="v">BB + AD</div><div class="k">The remittance cycle</div></div>
     </div>
@@ -1233,12 +1462,12 @@ body[data-export="on"] .out{box-shadow:none}
       <img class="lk-px" id="f_partex" alt="Partex Star Group">
     </div>
     <div class="hero-meta rv">
-      <div><span>Prepared by</span><strong>Finance &amp; Operations Team, Flyport Ltd.</strong></div>
       <div><span>Email</span><strong>info@flyport.net</strong></div>
       <div><span>Telephone</span><strong>+880 1882 666555</strong></div>
+      <div><span>Role</span><strong>General Sales Agent, Bangladesh</strong></div>
     </div>
-    <p class="foot rv">Prepared from Flyport's GSA launch-requirement checklist, four Bangladesh Bank SPA Circulars (No. 01 of 2020, No. 01 and No. 02 of 2021, No. 03 of 2023) and our AD-bank remittance procedure. Prepared for internal briefing. Not legal, tax or regulatory advice.</p>
-    <div class="notes"><b>Presenter note</b>Close on the promise in the headline, not on the company. Then hand over the printed circular set from slide 07.</div>
+    <p class="foot rv">Prepared for planning purposes from the Guidelines for Foreign Exchange Transactions 2018 and SPA Circulars No. 01 of 2020, No. 01 and No. 02 of 2021, and No. 03 of 2023. Not legal, tax or regulatory advice. Confirm every position with the Authorized Dealer bank and the relevant authority before relying on it in a filing.</p>
+    <div class="notes"><b>Presenter note</b>Close on the promise in the headline, not on the company. Then hand over the printed circular table from page 10.</div>
   </div>
 </section>
 
