@@ -115,7 +115,15 @@ h2.big{font-size:var(--t2);line-height:1.08;font-weight:600;margin-bottom:.7rem}
 
 /* ---------- THE GRID. the site's one content device: hairlines, no fills ---------- */
 /* the marker dot straddles the rule, so the grid needs room above it */
-.hg{display:grid;border-top:2px solid var(--line);position:relative;margin-top:2.6rem}
+.hg{display:grid;border-top:2px solid var(--line);position:relative;margin-top:2.6rem;row-gap:2.5rem}
+/* a wrapped row gets its own rule so the marker has something to straddle */
+.hg.c3 > div:nth-child(n+4),
+.hg.c4 > div:nth-child(n+5),
+.hg.c6 > div:nth-child(n+7){border-top:2px solid var(--line)}
+@media (max-width:1100px){
+  .hg.c4 > div:nth-child(n+3),.hg.c6 > div:nth-child(n+3),.hg.c3 > div:nth-child(n+3){border-top:2px solid var(--line)}
+}
+@media (max-width:720px){.hg > div{border-top:2px solid var(--line)}}
 .hg + .hg{margin-top:2.4rem}
 .hg.c2{grid-template-columns:repeat(2,1fr)}
 .hg.c3{grid-template-columns:repeat(3,1fr)}
@@ -153,7 +161,7 @@ table.dt th{font-family:var(--fm);font-size:var(--mono);letter-spacing:.14em;tex
   color:var(--muted);text-align:left;padding:.5rem .6rem;border-bottom:2px solid var(--line);font-weight:500}
 table.dt td{padding:.46rem .6rem;border-bottom:1px solid var(--line);color:var(--ink-2)}
 table.dt td.n{font-family:var(--fm);text-align:right;color:var(--ink);white-space:nowrap}
-table.dt tr.sub td{font-weight:600;color:var(--ink)}
+table.dt tr.subtot td{font-weight:600;color:var(--ink)}
 table.dt tr.tot td{font-weight:700;color:var(--mag-ink);border-bottom:0;border-top:2px solid var(--line)}
 table.dt tr.tot td.n{color:var(--mag-ink)}
 .scroll-x{overflow-x:auto;-webkit-overflow-scrolling:touch}
@@ -582,7 +590,7 @@ body[data-export="on"] .rv{opacity:1!important;transform:none!important;transiti
   <div class="wrap">
     <div class="eyebrow rv">Part 3 &nbsp;/&nbsp; 09 &nbsp;/&nbsp; Monthly Remittance Operations</div>
     <h2 class="big rv">Monthly Surplus-Earnings Calculator</h2>
-    <div class="scroll-x rv" style="margin-top:1.3rem"><table class="dt"><thead><tr><th>Line</th><th style="text-align:right">Amount, BDT</th></tr></thead><tbody><tr><td>Pax Sales Collection</td><td class="n">XXX</td></tr><tr><td>Add: Cargo Sales Collection</td><td class="n">XXX</td></tr><tr><td>Add: Airline’s Over-the-Counter Sale</td><td class="n">XXX</td></tr><tr><td>Add: Misc. Receipts (excess baggage, postal earnings, extra charges)</td><td class="n">XXX</td></tr><tr class="sub"><td>A. &nbsp;Total Collection for the Month</td><td class="n">XXXXXX</td></tr><tr><td>Less: Disbursement for the Month</td><td class="n">XXX</td></tr><tr><td>Less: Other Adjustment</td><td class="n">XXX</td></tr><tr class="sub"><td>B. &nbsp;Total Disbursement for the Month</td><td class="n">XXXXXX</td></tr><tr><td>i. &nbsp;Provision for refund, 10% of passenger revenue (current month)</td><td class="n">XXX</td></tr><tr><td>ii. &nbsp;Unused provision for refund, earlier period (previous month)</td><td class="n">XXX</td></tr><tr class="sub"><td>C. &nbsp;Net Provision (i &minus; ii)</td><td class="n">XXXXXX</td></tr><tr class="tot"><td>Net Surplus Earnings to be Remitted for the Month &nbsp;(A &minus; B &minus; C)</td><td class="n">XXXXXX</td></tr></tbody></table></div>
+    <div class="scroll-x rv" style="margin-top:1.3rem"><table class="dt"><thead><tr><th>Line</th><th style="text-align:right">Amount, BDT</th></tr></thead><tbody><tr><td>Pax Sales Collection</td><td class="n">XXX</td></tr><tr><td>Add: Cargo Sales Collection</td><td class="n">XXX</td></tr><tr><td>Add: Airline’s Over-the-Counter Sale</td><td class="n">XXX</td></tr><tr><td>Add: Misc. Receipts (excess baggage, postal earnings, extra charges)</td><td class="n">XXX</td></tr><tr class="subtot"><td>A. &nbsp;Total Collection for the Month</td><td class="n">XXXXXX</td></tr><tr><td>Less: Disbursement for the Month</td><td class="n">XXX</td></tr><tr><td>Less: Other Adjustment</td><td class="n">XXX</td></tr><tr class="subtot"><td>B. &nbsp;Total Disbursement for the Month</td><td class="n">XXXXXX</td></tr><tr><td>i. &nbsp;Provision for refund, 10% of passenger revenue (current month)</td><td class="n">XXX</td></tr><tr><td>ii. &nbsp;Unused provision for refund, earlier period (previous month)</td><td class="n">XXX</td></tr><tr class="subtot"><td>C. &nbsp;Net Provision (i &minus; ii)</td><td class="n">XXXXXX</td></tr><tr class="tot"><td>Net Surplus Earnings to be Remitted for the Month &nbsp;(A &minus; B &minus; C)</td><td class="n">XXXXXX</td></tr></tbody></table></div>
   </div>
 </section>
 
